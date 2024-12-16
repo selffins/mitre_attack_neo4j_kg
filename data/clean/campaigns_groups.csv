@@ -1,0 +1,17 @@
+source ID,target ID,mapping description
+C0028,G0034,(Citation: Andy Greenberg June 2017) (Citation: US District Court Indictment GRU Unit 74455 October 2020)
+C0025,G0034,(Citation: US District Court Indictment GRU Unit 74455 October 2020)(Citation: Joe Slowik August 2019)
+C0034,G0034,(Citation: Mandiant-Sandworm-Ukraine-2022)(Citation: Dragos-Sandworm-Ukraine-2022) 
+C0040,G0096,[APT41 DUST](https://attack.mitre.org/campaigns/C0040) was conducted by [APT41](https://attack.mitre.org/groups/G0096) from 2023 to July 2024.(Citation: Google Cloud APT41 2024)
+C0011,G0134,(Citation: Cisco Talos Transparent Tribe Education Campaign July 2022)
+C0017,G0096,(Citation: Mandiant APT41)
+C0027,G1015,(Citation: Crowdstrike TELCO BPO Campaign December 2022)
+C0032,G0088,(Citation: FireEye TRITON 2019)
+C0033,G0056,(Citation: Talos Promethium June 2020)(Citation: Bitdefender StrongPity June 2020)
+C0038,G1001,[HEXANE](https://attack.mitre.org/groups/G1001) probed victim infrastructure in support of [HomeLand Justice](https://attack.mitre.org/campaigns/C0038).(Citation: Microsoft Albanian Government Attacks September 2022)
+C0035,G1017,"[Volt Typhoon](https://attack.mitre.org/groups/G1017) used [KV Botnet Activity](https://attack.mitre.org/campaigns/C0035) to build intermediate communication chains between operators and victims, such as identified access to victims in Guam.(Citation: Lumen KVBotnet 2023)"
+C0022,G0032,(Citation: ClearSky Lazarus Aug 2020)(Citation: McAfee Lazarus Jul 2020)(Citation: McAfee Lazarus Nov 2020)(Citation: ESET Lazarus Jun 2020)
+C0023,G0016,(Citation: ESET Dukes October 2019)
+C0024,G0016,(Citation: NSA Joint Advisory SVR SolarWinds April 2021)(Citation: UK NSCS Russia SolarWinds April 2021)(Citation: Mandiant UNC2452 APT29 April 2022)
+C0030,G0088,(Citation: FireEye TEMP.Veles 2018)(Citation: FireEye TRITON Dec 2017)
+C0039,G1017,[Versa Director Zero Day Exploitation](https://attack.mitre.org/campaigns/C0039) was conducted by [Volt Typhoon](https://attack.mitre.org/groups/G1017) between June and August 2024.(Citation: Lumen Versa 2024)

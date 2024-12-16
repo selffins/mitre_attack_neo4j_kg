@@ -1,0 +1,127 @@
+source ID,target ID,mapping description
+C0028,S0089,(Citation: Booz Allen Hamilton)
+C0028,S0607,(Citation: Booz Allen Hamilton)
+C0025,S0604,"Within the [2016 Ukraine Electric Power Attack](https://attack.mitre.org/campaigns/C0025), [Industroyer](https://attack.mitre.org/software/S0604) was used to target and disrupt the Ukrainian power grid substation components.(Citation: Dragos Crashoverride 2018)(Citation: ESET Industroyer)"
+C0034,S0693,(Citation: Mandiant-Sandworm-Ukraine-2022)
+C0040,S0154,[Cobalt Strike](https://attack.mitre.org/software/S0154) was used during [APT41 DUST](https://attack.mitre.org/campaigns/C0040).(Citation: Google Cloud APT41 2024)
+C0040,S1158,[DUSTPAN](https://attack.mitre.org/software/S1158) was used during [APT41 DUST](https://attack.mitre.org/campaigns/C0040).(Citation: Google Cloud APT41 2024)
+C0040,S1159,[DUSTTRAP](https://attack.mitre.org/software/S1159) was used during [APT41 DUST](https://attack.mitre.org/campaigns/C0040).(Citation: Google Cloud APT41 2024)
+C0040,S0160,[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used [certutil](https://attack.mitre.org/software/S0160) to load and execute [DUSTPAN](https://attack.mitre.org/software/S1158).(Citation: Google Cloud APT41 2024)
+C0010,S1042,(Citation: Mandiant UNC3890 Aug 2022)
+C0010,S1049,(Citation: Mandiant UNC3890 Aug 2022)
+C0011,S0115,"For [C0011](https://attack.mitre.org/campaigns/C0011), [Transparent Tribe](https://attack.mitre.org/groups/G0134) used an updated version of [Crimson](https://attack.mitre.org/software/S0115).(Citation: Cisco Talos Transparent Tribe Education Campaign July 2022)"
+C0015,S0552,(Citation: DFIR Conti Bazar Nov 2021)
+C0015,S0534,(Citation: DFIR Conti Bazar Nov 2021)
+C0015,S0154,(Citation: DFIR Conti Bazar Nov 2021)
+C0015,S0575,(Citation: DFIR Conti Bazar Nov 2021)
+C0015,S1040,(Citation: DFIR Conti Bazar Nov 2021)
+C0017,S0154,"During [C0017](https://attack.mitre.org/campaigns/C0017), [APT41](https://attack.mitre.org/groups/G0096) used the DUSTPAN in-memory dropper to drop a [Cobalt Strike](https://attack.mitre.org/software/S0154) BEACON backdoor onto a compromised network.(Citation: Mandiant APT41)"
+C0017,S1052,(Citation: Mandiant APT41)
+C0017,S1051,(Citation: Mandiant APT41)
+C0017,S0002,"During [C0017](https://attack.mitre.org/campaigns/C0017), [APT41](https://attack.mitre.org/groups/G0096) used [Mimikatz](https://attack.mitre.org/software/S0002) to execute the `lsadump::sam` command on dumped registry hives to obtain locally stored credentials and NTLM hashes.(Citation: Mandiant APT41)"
+C0017,S0097,"During [C0017](https://attack.mitre.org/campaigns/C0017), [APT41](https://attack.mitre.org/groups/G0096) issued [Ping](https://attack.mitre.org/software/S0097) commands to trigger DNS resolutions for data exfiltration, where the output of a reconnaissance command was prepended to subdomains within [APT41](https://attack.mitre.org/groups/G0096)'s Cloudflare C2 infrastructure.(Citation: Mandiant APT41)"
+C0017,S0105,"During [C0017](https://attack.mitre.org/campaigns/C0017), [APT41](https://attack.mitre.org/groups/G0096) used multiple [dsquery](https://attack.mitre.org/software/S0105) commands to enumerate various Active Directory objects within a compromised environment.(Citation: Mandiant APT41)"
+C0018,S1053,"During [C0018](https://attack.mitre.org/campaigns/C0018), the threat actors used [AvosLocker](https://attack.mitre.org/software/S1053) ransomware to encrypt the compromised network.(Citation: Costa AvosLocker May 2022)(Citation: Cisco Talos Avos Jun 2022)"
+C0018,S0154,(Citation: Cisco Talos Avos Jun 2022)
+C0018,S0002,(Citation: Cisco Talos Avos Jun 2022)(Citation: Costa AvosLocker May 2022)
+C0018,S0097,"During [C0018](https://attack.mitre.org/campaigns/C0018), the threat actors used a PowerShell script to execute [Ping](https://attack.mitre.org/software/S0097) commands once every minute against a domain controller.(Citation: Costa AvosLocker May 2022)"
+C0018,S0633,(Citation: Cisco Talos Avos Jun 2022)
+C0018,S0108,"During [C0018](https://attack.mitre.org/campaigns/C0018), the threat actors used [netsh](https://attack.mitre.org/software/S0108) on a domain controller to ensure there was no existing firewall or to disable one.(Citation: Costa AvosLocker May 2022)"
+C0021,S0154,(Citation: FireEye APT29 Nov 2018)(Citation: Microsoft Unidentified Dec 2018)
+C0026,S1074,"During [C0026](https://attack.mitre.org/campaigns/C0026), the threat actors re-registered expired [ANDROMEDA](https://attack.mitre.org/software/S1074) domains to profile past victims for further targeting.(Citation: Mandiant Suspected Turla Campaign February 2023)"
+C0026,S0099,(Citation: Mandiant Suspected Turla Campaign February 2023)
+C0026,S1075,[KOPILUWAK](https://attack.mitre.org/software/S1075) was used as a first-stage profiling utility for previous victims of [ANDROMEDA](https://attack.mitre.org/software/S1074) during [C0026](https://attack.mitre.org/campaigns/C0026).(Citation: Mandiant Suspected Turla Campaign February 2023)
+C0026,S0039,(Citation: Mandiant Suspected Turla Campaign February 2023)
+C0026,S1076,"During [C0026](https://attack.mitre.org/campaigns/C0026), the threat actors used [QUIETCANARY](https://attack.mitre.org/software/S1076) to gather and exfiltrate data.  (Citation: Mandiant Suspected Turla Campaign February 2023)"
+C0026,S0104,(Citation: Mandiant Suspected Turla Campaign February 2023)
+C0027,S0357,"During [C0027](https://attack.mitre.org/campaigns/C0027), [Scattered Spider](https://attack.mitre.org/groups/G1015) used [Impacket](https://attack.mitre.org/software/S0357) for lateral movement.(Citation: Crowdstrike TELCO BPO Campaign December 2022)"
+C0032,S0002,(Citation: FireEye TRITON 2019)
+C0033,S0491,(Citation: Talos Promethium June 2020)(Citation: Bitdefender StrongPity June 2020)
+C0004,S0614,"During [CostaRicto](https://attack.mitre.org/campaigns/C0004), threat actors used a custom VM-based payload loader named [CostaBricks](https://attack.mitre.org/software/S0614).(Citation: BlackBerry CostaRicto November 2020)"
+C0004,S0613,"During [CostaRicto](https://attack.mitre.org/campaigns/C0004), threat actors used the 64-bit backdoor loader [PS1](https://attack.mitre.org/software/S0613).(Citation: BlackBerry CostaRicto November 2020)"
+C0004,S0194,"During [CostaRicto](https://attack.mitre.org/campaigns/C0004), threat actors used [PowerSploit](https://attack.mitre.org/software/S0194)'s `Invoke-ReflectivePEInjection` module.(Citation: BlackBerry CostaRicto November 2020)"
+C0004,S0029,"During [CostaRicto](https://attack.mitre.org/campaigns/C0004), threat actors used [PsExec](https://attack.mitre.org/software/S0029).(Citation: BlackBerry CostaRicto November 2020)"
+C0004,S0615,"During [CostaRicto](https://attack.mitre.org/campaigns/C0004), threat actors used [SombRAT](https://attack.mitre.org/software/S0615) in conjuction with [CostaBricks](https://attack.mitre.org/software/S0614) and [PowerSploit](https://attack.mitre.org/software/S0194).(Citation: BlackBerry CostaRicto November 2020)"
+C0004,S0183,"During [CostaRicto](https://attack.mitre.org/campaigns/C0004), threat actors used C2 servers managed through [Tor](https://attack.mitre.org/software/S0183).(Citation: BlackBerry CostaRicto November 2020)"
+C0029,S1118,(Citation: Mandiant Cutting Edge Part 2 January 2024)(Citation: Mandiant Cutting Edge Part 3 February 2024)
+C0029,S0488, (Citation: Mandiant Cutting Edge Part 2 January 2024)
+C0029,S1120,(Citation: Mandiant Cutting Edge Part 2 January 2024)
+C0029,S1117,(Citation: Volexity Ivanti Zero-Day Exploitation January 2024)
+C0029,S0357, (Citation: Mandiant Cutting Edge Part 2 January 2024)
+C0029,S1119,(Citation: Mandiant Cutting Edge Part 2 January 2024)
+C0029,S1121,(Citation: Mandiant Cutting Edge Part 3 February 2024)
+C0029,S1123,(Citation: Mandiant Cutting Edge Part 3 February 2024)
+C0029,S1116,(Citation: Mandiant Cutting Edge January 2024)(Citation: Volexity Ivanti Zero-Day Exploitation January 2024)(Citation: Volexity Ivanti Global Exploitation January 2024)
+C0029,S1115,(Citation: Mandiant Cutting Edge January 2024)
+C0029,S1114,(Citation: Mandiant Cutting Edge January 2024)
+C0001,S0363,During [Frankenstein](https://attack.mitre.org/campaigns/C0001) the threat actors used [Empire](https://attack.mitre.org/software/S0363) for discovery.(Citation: Talos Frankenstein June 2019)
+C0007,S1041,"During [FunnyDream](https://attack.mitre.org/campaigns/C0007), [Chinoxy](https://attack.mitre.org/software/S1041) was used to gain persistence and deploy other malware components.(Citation: Bitdefender FunnyDream Campaign November 2020)"
+C0007,S1044,"During the [FunnyDream](https://attack.mitre.org/campaigns/C0007) campaign, the [FunnyDream](https://attack.mitre.org/software/S1044) backdoor was used to execute multiple components and exfiltrate files.(Citation: Bitdefender FunnyDream Campaign November 2020)"
+C0007,S1050,During [FunnyDream](https://attack.mitre.org/campaigns/C0007) the threat actors used a customized version of [PcShare](https://attack.mitre.org/software/S1050).(Citation: Bitdefender FunnyDream Campaign November 2020)
+C0007,S0096,(Citation: Bitdefender FunnyDream Campaign November 2020)
+C0007,S0057,(Citation: Bitdefender FunnyDream Campaign November 2020)
+C0007,S1043,"During [FunnyDream](https://attack.mitre.org/campaigns/C0007), [ccf32](https://attack.mitre.org/software/S1043) was used to collect data.(Citation: Bitdefender FunnyDream Campaign November 2020)"
+C0007,S0100,(Citation: Bitdefender FunnyDream Campaign November 2020)
+C0007,S0104,(Citation: Bitdefender FunnyDream Campaign November 2020)
+C0038,S1149,(Citation: Mandiant ROADSWEEP August 2022)
+C0038,S0357,(Citation: Microsoft Albanian Government Attacks September 2022)
+C0038,S0002,(Citation: CISA Iran Albanian Attacks September 2022)(Citation: Microsoft Albanian Government Attacks September 2022)
+C0038,S1150,(Citation: Mandiant ROADSWEEP August 2022)
+C0038,S0364,(Citation: CISA Iran Albanian Attacks September 2022)(Citation: Microsoft Albanian Government Attacks September 2022)
+C0038,S1151,(Citation: CISA Iran Albanian Attacks September 2022)(Citation: Microsoft Albanian Government Attacks September 2022)
+C0038,S0095,(Citation: CISA Iran Albanian Attacks September 2022)
+C0002,S0073,"During [Night Dragon](https://attack.mitre.org/campaigns/C0002), threat actors deployed [ASPXSpy](https://attack.mitre.org/software/S0073) on compromised web servers.(Citation: McAfee Night Dragon)"
+C0002,S0029,"During [Night Dragon](https://attack.mitre.org/campaigns/C0002), threat actors used [PsExec](https://attack.mitre.org/software/S0029) to remotely execute droppers.(Citation: McAfee Night Dragon)"
+C0002,S0110,"During [Night Dragon](https://attack.mitre.org/campaigns/C0002), threat actors used [at](https://attack.mitre.org/software/S0110) to execute droppers.(Citation: McAfee Night Dragon)"
+C0002,S0008,"During [Night Dragon](https://attack.mitre.org/campaigns/C0002), threat actors used [gsecdump](https://attack.mitre.org/software/S0008) to dump account hashes.(Citation: McAfee Night Dragon)"
+C0002,S0350,"During [Night Dragon](https://attack.mitre.org/campaigns/C0002), threat actors used [zwShell](https://attack.mitre.org/software/S0350) to generate Trojan variants, control victim machines, and exfiltrate data.(Citation: McAfee Night Dragon)"
+C0012,S0096,(Citation: Cybereason OperationCuckooBees May 2022)
+C0012,S0105,(Citation: Cybereason OperationCuckooBees May 2022)
+C0022,S0694,"During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used [DRATzarus](https://attack.mitre.org/software/S0694) to deploy open source software and partly commodity software such as [Responder](https://attack.mitre.org/software/S0174), Wake-On-Lan, and ChromePass to target infected hosts.(Citation: ClearSky Lazarus Aug 2020)"
+C0022,S0174,(Citation: ClearSky Lazarus Aug 2020)
+C0022,S0678,"During [Operation Dream Job](https://attack.mitre.org/campaigns/C0022), [Lazarus Group](https://attack.mitre.org/groups/G0032) used [Torisma](https://attack.mitre.org/software/S0678) to actively monitor for new drives and remote desktop connections on an infected system.(Citation: McAfee Lazarus Jul 2020)(Citation: McAfee Lazarus Nov 2020)"
+C0016,S0084,(Citation: Cylance Dust Storm)
+C0016,S0083,(Citation: Cylance Dust Storm)
+C0016,S0012,(Citation: Cylance Dust Storm)
+C0016,S0085,(Citation: Cylance Dust Storm)
+C0016,S0086,(Citation: Cylance Dust Storm)
+C0016,S0032,(Citation: Cylance Dust Storm)
+C0023,S0512,"For [Operation Ghost](https://attack.mitre.org/campaigns/C0023), [APT29](https://attack.mitre.org/groups/G0016) used [FatDuke](https://attack.mitre.org/software/S0512) as a third-stage backdoor.(Citation: ESET Dukes October 2019)"
+C0023,S0051,"For [Operation Ghost](https://attack.mitre.org/campaigns/C0023), [APT29](https://attack.mitre.org/groups/G0016) used [MiniDuke](https://attack.mitre.org/software/S0051) as a second-stage backdoor.(Citation: ESET Dukes October 2019)"
+C0023,S0518,"For [Operation Ghost](https://attack.mitre.org/campaigns/C0023), [APT29](https://attack.mitre.org/groups/G0016) used [PolyglotDuke](https://attack.mitre.org/software/S0518) as a first-stage downloader.(Citation: ESET Dukes October 2019)"
+C0023,S0029,"For [Operation Ghost](https://attack.mitre.org/campaigns/C0023), [APT29](https://attack.mitre.org/groups/G0016) used [PsExec](https://attack.mitre.org/software/S0029) for lateral movement on compromised networks.(Citation: ESET Dukes October 2019)"
+C0023,S0511,"For [Operation Ghost](https://attack.mitre.org/campaigns/C0023), [APT29](https://attack.mitre.org/groups/G0016) used [RegDuke](https://attack.mitre.org/software/S0511) as a first-stage implant.(Citation: ESET Dukes October 2019)"
+C0006,S0075,(Citation: McAfee Honeybee) 
+C0006,S0464,[Operation Honeybee](https://attack.mitre.org/campaigns/C0006) included the use of an upgraded version of [SYSCON](https://attack.mitre.org/software/S0464).(Citation: McAfee Honeybee)
+C0006,S0096,(Citation: McAfee Honeybee) 
+C0006,S0057,(Citation: McAfee Honeybee) 
+C0006,S0106,(Citation: McAfee Honeybee) 
+C0013,S0448,"During the investigation of [Operation Sharpshooter](https://attack.mitre.org/campaigns/C0013), security researchers identified [Rising Sun](https://attack.mitre.org/software/S0448) in 87 organizations across the globe and subsequently discovered three variants.(Citation: McAfee Sharpshooter December 2018)(Citation: Bleeping Computer Op Sharpshooter March 2019)"
+C0005,S0332,(Citation: ESET Operation Spalax Jan 2021)
+C0005,S0385,(Citation: ESET Operation Spalax Jan 2021)
+C0014,S0521,"During [Operation Wocao](https://attack.mitre.org/campaigns/C0014), threat actors used [BloodHound](https://attack.mitre.org/software/S0521) discover trust between domains.(Citation: FoxIT Wocao December 2019)"
+C0014,S0357,"During [Operation Wocao](https://attack.mitre.org/campaigns/C0014), threat actors used `smbexec.py` and `psexec.py` from [Impacket](https://attack.mitre.org/software/S0357) for lateral movement.(Citation: FoxIT Wocao December 2019)"
+C0014,S0002,"During [Operation Wocao](https://attack.mitre.org/campaigns/C0014), threat actors used [Mimikatz](https://attack.mitre.org/software/S0002) with the `privilege::debug` and `lsadump::dcsync /all` flags to dump account credentials.(Citation: FoxIT Wocao December 2019)"
+C0014,S0194,"During [Operation Wocao](https://attack.mitre.org/campaigns/C0014), threat actors used [PowerSploit](https://attack.mitre.org/software/S0194)’s `Invoke-Kerberoast` module to bruteforce passwords and retrieve encrypted service tickets.(Citation: FoxIT Wocao December 2019)"
+C0014,S0029,"During [Operation Wocao](https://attack.mitre.org/campaigns/C0014), threat actors used [PsExec](https://attack.mitre.org/software/S0029) to interact with other systems inside the internal network.(Citation: FoxIT Wocao December 2019)"
+C0014,S0183,"During [Operation Wocao](https://attack.mitre.org/campaigns/C0014), threat actors used [Tor](https://attack.mitre.org/software/S0183) exit nodes to execute commands.(Citation: FoxIT Wocao December 2019)"
+C0014,S0645,"During [Operation Wocao](https://attack.mitre.org/campaigns/C0014), threat actors used [Wevtutil](https://attack.mitre.org/software/S0645) to delete system and security event logs with `wevtutil cl system` and `wevtutil cl security`.(Citation: FoxIT Wocao December 2019)"
+C0014,S0105,"During [Operation Wocao](https://attack.mitre.org/campaigns/C0014), threat actors used [dsquery](https://attack.mitre.org/software/S0105) to retrieve all subnets in the Active Directory.(Citation: FoxIT Wocao December 2019)"
+C0014,S0104,"During [Operation Wocao](https://attack.mitre.org/campaigns/C0014), threat actors used [netstat](https://attack.mitre.org/software/S0104) to identify specific ports.(Citation: FoxIT Wocao December 2019)"
+C0036,S1145,[Pikabot Distribution February 2024](https://attack.mitre.org/campaigns/C0036) distributed [Pikabot](https://attack.mitre.org/software/S1145) for initial access purposes in February 2024.(Citation: Elastic Pikabot 2024)(Citation: Zscaler Pikabot 2024)
+C0024,S0552,(Citation: Microsoft Analyzing Solorigate Dec 2020)(Citation: CrowdStrike StellarParticle January 2022)
+C0024,S0154,(Citation: FireEye SUNBURST Backdoor December 2020)(Citation: Cybersecurity Advisory SVR TTP May 2021)
+C0024,S0597,(Citation: MSTIC NOBELIUM Mar 2021)
+C0024,S0588,(Citation: MSTIC NOBELIUM Mar 2021)
+C0024,S0002,(Citation: Microsoft 365 Defender Solorigate)(Citation: CrowdStrike StellarParticle January 2022)
+C0024,S0565,(Citation: Microsoft Deep Dive Solorigate January 2021)(Citation: Symantec RAINDROP January 2021)
+C0024,S0559,(Citation: FireEye SUNBURST Backdoor December 2020)(Citation: Microsoft Deep Dive Solorigate January 2021)(Citation: Symantec Sunburst Sending Data January 2021)(Citation: SolarWinds Sunburst Sunspot Update January 2021)(Citation: FireEye SUNBURST Additional Details Dec 2020)(Citation: CheckPoint Sunburst & Teardrop December 2020)
+C0024,S0562,(Citation: CrowdStrike SUNSPOT Implant January 2021)
+C0024,S0589,(Citation: MSTIC NOBELIUM Mar 2021)
+C0024,S0560,(Citation: Microsoft Deep Dive Solorigate January 2021)(Citation: CheckPoint Sunburst & Teardrop December 2020)(Citation: FireEye SUNBURST Backdoor December 2020)
+C0024,S0682,(Citation: CrowdStrike StellarParticle January 2022)
+C0030,S0002,(Citation: FireEye TRITON 2018)
+C0039,S1154,[VersaMem](https://attack.mitre.org/software/S1154) was used during [Versa Director Zero Day Exploitation](https://attack.mitre.org/campaigns/C0039) by [Volt Typhoon](https://attack.mitre.org/groups/G1017).(Citation: Lumen Versa 2024)
+C0037,S1111,[Water Curupira Pikabot Distribution](https://attack.mitre.org/campaigns/C0037) activity included distribution of [DarkGate](https://attack.mitre.org/software/S1111) en route to ransomware execution.(Citation: TrendMicro Pikabot 2024)
+C0037,S0483,[Water Curupira Pikabot Distribution](https://attack.mitre.org/campaigns/C0037) included distribution of [IcedID](https://attack.mitre.org/software/S0483) en route to ransomware deployment.(Citation: TrendMicro Pikabot 2024)
+C0037,S1145,[Water Curupira Pikabot Distribution](https://attack.mitre.org/campaigns/C0037) distributed [Pikabot](https://attack.mitre.org/software/S1145) as an initial access mechanism.(Citation: TrendMicro Pikabot 2024)

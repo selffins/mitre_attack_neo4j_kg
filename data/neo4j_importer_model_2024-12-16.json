@@ -1,0 +1,2291 @@
+{
+  "version": "2.2.0",
+  "visualisation": {
+    "nodes": [
+      {
+        "id": "n:1",
+        "position": {
+          "x": -61.3552675014714,
+          "y": -1.802251342675424
+        }
+      },
+      {
+        "id": "n:2",
+        "position": {
+          "x": -64.07546374354972,
+          "y": -118.29253431286838
+        }
+      },
+      {
+        "id": "n:3",
+        "position": {
+          "x": 208.2175237260717,
+          "y": -6.1288441570617
+        }
+      },
+      {
+        "id": "n:5",
+        "position": {
+          "x": 65.78660590736467,
+          "y": -51.17449706042429
+        }
+      },
+      {
+        "id": "n:6",
+        "position": {
+          "x": 71.64878174424746,
+          "y": 236.31760209395705
+        }
+      },
+      {
+        "id": "n:7",
+        "position": {
+          "x": 64.3329702392553,
+          "y": -167.7850045176817
+        }
+      },
+      {
+        "id": "n:8",
+        "position": {
+          "x": -58.92154530598735,
+          "y": 188.79809902018948
+        }
+      },
+      {
+        "id": "n:4",
+        "position": {
+          "x": 205.37484334130286,
+          "y": 221.5448721315249
+        }
+      }
+    ]
+  },
+  "dataModel": {
+    "version": "2.2.0",
+    "graphSchemaRepresentation": {
+      "version": "1.0.0",
+      "graphSchema": {
+        "nodeLabels": [
+          {
+            "$id": "nl:1",
+            "token": "Technique",
+            "properties": [
+              {
+                "$id": "p:6",
+                "token": "ID",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:7",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:8",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:9",
+                "token": "detection",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:20",
+                "token": "platforms",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:21",
+                "token": "defenses bypassed",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:22",
+                "token": "permissions required",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:2",
+            "token": "Tactic",
+            "properties": [
+              {
+                "$id": "p:1",
+                "token": "ID",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:2",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:5",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:3",
+            "token": "Subtechnique",
+            "properties": [
+              {
+                "$id": "p:28",
+                "token": "ID",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:29",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:30",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:31",
+                "token": "detection",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:32",
+                "token": "platforms",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:33",
+                "token": "defenses bypassed",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:34",
+                "token": "permissions required",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:5",
+            "token": "Group",
+            "properties": [
+              {
+                "$id": "p:23",
+                "token": "ID",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:24",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:25",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:26",
+                "token": "created",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:27",
+                "token": "last modified",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:6",
+            "token": "Software",
+            "properties": [
+              {
+                "$id": "p:15",
+                "token": "ID",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:16",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:17",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:18",
+                "token": "platforms",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:19",
+                "token": "type",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:7",
+            "token": "Associated Group",
+            "properties": [
+              {
+                "$id": "p:3",
+                "token": "associated_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:4",
+                "token": "citation",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:8",
+            "token": "Campaign",
+            "properties": [
+              {
+                "$id": "p:10",
+                "token": "ID",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:11",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:12",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:13",
+                "token": "first seen",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:14",
+                "token": "last seen",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:4",
+            "token": "Mitigation",
+            "properties": [
+              {
+                "$id": "p:35",
+                "token": "ID",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:36",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:37",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          }
+        ],
+        "relationshipTypes": [
+          {
+            "$id": "rt:1",
+            "token": "achieved by",
+            "properties": []
+          },
+          {
+            "$id": "rt:2",
+            "token": "includes",
+            "properties": []
+          },
+          {
+            "$id": "rt:3",
+            "token": "involved",
+            "properties": [
+              {
+                "$id": "p:45",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:4",
+            "token": "involved",
+            "properties": [
+              {
+                "$id": "p:48",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:5",
+            "token": "associated",
+            "properties": []
+          },
+          {
+            "$id": "rt:6",
+            "token": "involved",
+            "properties": [
+              {
+                "$id": "p:49",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:7",
+            "token": "used for",
+            "properties": [
+              {
+                "$id": "p:52",
+                "token": "mapping description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:8",
+            "token": "used for",
+            "properties": [
+              {
+                "$id": "p:53",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:9",
+            "token": "mitigates",
+            "properties": [
+              {
+                "$id": "p:54",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:10",
+            "token": "mitigates",
+            "properties": [
+              {
+                "$id": "p:51",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:11",
+            "token": "uses",
+            "properties": [
+              {
+                "$id": "p:50",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:12",
+            "token": "uses",
+            "properties": [
+              {
+                "$id": "p:43",
+                "token": "mapping description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:13",
+            "token": "uses",
+            "properties": [
+              {
+                "$id": "p:44",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:14",
+            "token": "involved",
+            "properties": [
+              {
+                "$id": "p:42",
+                "token": "citation",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          }
+        ],
+        "nodeObjectTypes": [
+          {
+            "$id": "n:1",
+            "labels": [
+              {
+                "$ref": "#nl:1"
+              }
+            ]
+          },
+          {
+            "$id": "n:2",
+            "labels": [
+              {
+                "$ref": "#nl:2"
+              }
+            ]
+          },
+          {
+            "$id": "n:3",
+            "labels": [
+              {
+                "$ref": "#nl:3"
+              }
+            ]
+          },
+          {
+            "$id": "n:5",
+            "labels": [
+              {
+                "$ref": "#nl:5"
+              }
+            ]
+          },
+          {
+            "$id": "n:6",
+            "labels": [
+              {
+                "$ref": "#nl:6"
+              }
+            ]
+          },
+          {
+            "$id": "n:7",
+            "labels": [
+              {
+                "$ref": "#nl:7"
+              }
+            ]
+          },
+          {
+            "$id": "n:8",
+            "labels": [
+              {
+                "$ref": "#nl:8"
+              }
+            ]
+          },
+          {
+            "$id": "n:4",
+            "labels": [
+              {
+                "$ref": "#nl:4"
+              }
+            ]
+          }
+        ],
+        "relationshipObjectTypes": [
+          {
+            "$id": "r:1",
+            "type": {
+              "$ref": "#rt:1"
+            },
+            "from": {
+              "$ref": "#n:2"
+            },
+            "to": {
+              "$ref": "#n:1"
+            }
+          },
+          {
+            "$id": "r:2",
+            "type": {
+              "$ref": "#rt:2"
+            },
+            "from": {
+              "$ref": "#n:1"
+            },
+            "to": {
+              "$ref": "#n:3"
+            }
+          },
+          {
+            "$id": "r:3",
+            "type": {
+              "$ref": "#rt:3"
+            },
+            "from": {
+              "$ref": "#n:8"
+            },
+            "to": {
+              "$ref": "#n:1"
+            }
+          },
+          {
+            "$id": "r:4",
+            "type": {
+              "$ref": "#rt:4"
+            },
+            "from": {
+              "$ref": "#n:8"
+            },
+            "to": {
+              "$ref": "#n:3"
+            }
+          },
+          {
+            "$id": "r:5",
+            "type": {
+              "$ref": "#rt:5"
+            },
+            "from": {
+              "$ref": "#n:7"
+            },
+            "to": {
+              "$ref": "#n:5"
+            }
+          },
+          {
+            "$id": "r:6",
+            "type": {
+              "$ref": "#rt:6"
+            },
+            "from": {
+              "$ref": "#n:8"
+            },
+            "to": {
+              "$ref": "#n:6"
+            }
+          },
+          {
+            "$id": "r:7",
+            "type": {
+              "$ref": "#rt:7"
+            },
+            "from": {
+              "$ref": "#n:6"
+            },
+            "to": {
+              "$ref": "#n:3"
+            }
+          },
+          {
+            "$id": "r:8",
+            "type": {
+              "$ref": "#rt:8"
+            },
+            "from": {
+              "$ref": "#n:6"
+            },
+            "to": {
+              "$ref": "#n:1"
+            }
+          },
+          {
+            "$id": "r:9",
+            "type": {
+              "$ref": "#rt:9"
+            },
+            "from": {
+              "$ref": "#n:4"
+            },
+            "to": {
+              "$ref": "#n:1"
+            }
+          },
+          {
+            "$id": "r:10",
+            "type": {
+              "$ref": "#rt:10"
+            },
+            "from": {
+              "$ref": "#n:4"
+            },
+            "to": {
+              "$ref": "#n:3"
+            }
+          },
+          {
+            "$id": "r:11",
+            "type": {
+              "$ref": "#rt:11"
+            },
+            "from": {
+              "$ref": "#n:5"
+            },
+            "to": {
+              "$ref": "#n:6"
+            }
+          },
+          {
+            "$id": "r:12",
+            "type": {
+              "$ref": "#rt:12"
+            },
+            "from": {
+              "$ref": "#n:5"
+            },
+            "to": {
+              "$ref": "#n:3"
+            }
+          },
+          {
+            "$id": "r:13",
+            "type": {
+              "$ref": "#rt:13"
+            },
+            "from": {
+              "$ref": "#n:5"
+            },
+            "to": {
+              "$ref": "#n:1"
+            }
+          },
+          {
+            "$id": "r:14",
+            "type": {
+              "$ref": "#rt:14"
+            },
+            "from": {
+              "$ref": "#n:8"
+            },
+            "to": {
+              "$ref": "#n:5"
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "$id": "c:1",
+            "name": "associated_id_Associated_Group_uniq",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:7"
+            },
+            "properties": [
+              {
+                "$ref": "#p:3"
+              }
+            ]
+          },
+          {
+            "$id": "c:2",
+            "name": "ID_Tactic_uniq",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:2"
+            },
+            "properties": [
+              {
+                "$ref": "#p:1"
+              }
+            ]
+          },
+          {
+            "$id": "c:3",
+            "name": "ID_Technique_uniq",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:1"
+            },
+            "properties": [
+              {
+                "$ref": "#p:6"
+              }
+            ]
+          },
+          {
+            "$id": "c:4",
+            "name": "ID_Campaign_uniq",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:8"
+            },
+            "properties": [
+              {
+                "$ref": "#p:10"
+              }
+            ]
+          },
+          {
+            "$id": "c:5",
+            "name": "ID_Software_uniq",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:6"
+            },
+            "properties": [
+              {
+                "$ref": "#p:15"
+              }
+            ]
+          },
+          {
+            "$id": "c:6",
+            "name": "ID_Group_uniq",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:5"
+            },
+            "properties": [
+              {
+                "$ref": "#p:23"
+              }
+            ]
+          },
+          {
+            "$id": "c:7",
+            "name": "ID_Subtechnique_uniq",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:3"
+            },
+            "properties": [
+              {
+                "$ref": "#p:28"
+              }
+            ]
+          },
+          {
+            "$id": "c:8",
+            "name": "ID_Mitigation_uniq",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:4"
+            },
+            "properties": [
+              {
+                "$ref": "#p:35"
+              }
+            ]
+          }
+        ],
+        "indexes": [
+          {
+            "$id": "i:1",
+            "name": "associated_id_Associated_Group_uniq",
+            "indexType": "default",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:7"
+            },
+            "properties": [
+              {
+                "$ref": "#p:3"
+              }
+            ]
+          },
+          {
+            "$id": "i:2",
+            "name": "ID_Tactic_uniq",
+            "indexType": "default",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:2"
+            },
+            "properties": [
+              {
+                "$ref": "#p:1"
+              }
+            ]
+          },
+          {
+            "$id": "i:3",
+            "name": "ID_Technique_uniq",
+            "indexType": "default",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:1"
+            },
+            "properties": [
+              {
+                "$ref": "#p:6"
+              }
+            ]
+          },
+          {
+            "$id": "i:4",
+            "name": "ID_Campaign_uniq",
+            "indexType": "default",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:8"
+            },
+            "properties": [
+              {
+                "$ref": "#p:10"
+              }
+            ]
+          },
+          {
+            "$id": "i:5",
+            "name": "ID_Software_uniq",
+            "indexType": "default",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:6"
+            },
+            "properties": [
+              {
+                "$ref": "#p:15"
+              }
+            ]
+          },
+          {
+            "$id": "i:6",
+            "name": "ID_Group_uniq",
+            "indexType": "default",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:5"
+            },
+            "properties": [
+              {
+                "$ref": "#p:23"
+              }
+            ]
+          },
+          {
+            "$id": "i:7",
+            "name": "ID_Subtechnique_uniq",
+            "indexType": "default",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:3"
+            },
+            "properties": [
+              {
+                "$ref": "#p:28"
+              }
+            ]
+          },
+          {
+            "$id": "i:8",
+            "name": "ID_Mitigation_uniq",
+            "indexType": "default",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:4"
+            },
+            "properties": [
+              {
+                "$ref": "#p:35"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "graphSchemaExtensionsRepresentation": {
+      "nodeKeyProperties": [
+        {
+          "node": {
+            "$ref": "#n:7"
+          },
+          "keyProperty": {
+            "$ref": "#p:3"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:2"
+          },
+          "keyProperty": {
+            "$ref": "#p:1"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:1"
+          },
+          "keyProperty": {
+            "$ref": "#p:6"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:8"
+          },
+          "keyProperty": {
+            "$ref": "#p:10"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:6"
+          },
+          "keyProperty": {
+            "$ref": "#p:15"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:5"
+          },
+          "keyProperty": {
+            "$ref": "#p:23"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:3"
+          },
+          "keyProperty": {
+            "$ref": "#p:28"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:4"
+          },
+          "keyProperty": {
+            "$ref": "#p:35"
+          }
+        }
+      ]
+    },
+    "graphMappingRepresentation": {
+      "dataSourceSchema": {
+        "type": "local",
+        "tableSchemas": [
+          {
+            "name": "tactics_techniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "technique_id",
+                "type": "string",
+                "sample": "T1548",
+                "include": true
+              },
+              {
+                "name": "tactic_id",
+                "type": "string",
+                "sample": "TA0005",
+                "include": true
+              },
+              {
+                "name": "relationship",
+                "type": "string",
+                "sample": "is tactic of",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "tactics.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "ID",
+                "type": "string",
+                "sample": "TA0009",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "Collection",
+                "include": true
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "sample": "The adversary is trying to gather data of interest to their goal.\n\nCollection consists of techniques...",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "subtechniques_techniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "subtechnique_id",
+                "type": "string",
+                "sample": "T1548.002",
+                "include": true
+              },
+              {
+                "name": "sub-technique of",
+                "type": "string",
+                "sample": "T1548",
+                "include": true
+              },
+              {
+                "name": "relationship",
+                "type": "string",
+                "sample": "sub-technique",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "mitigations.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "ID",
+                "type": "string",
+                "sample": "M1036",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "Account Use Policies",
+                "include": true
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "sample": "Configure features related to account use like login attempt lockouts, specific login times, etc.",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "groups_software.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "source ID",
+                "type": "string",
+                "sample": "G1028",
+                "include": true
+              },
+              {
+                "name": "target ID",
+                "type": "string",
+                "sample": "S0339",
+                "include": true
+              },
+              {
+                "name": "mapping description",
+                "type": "string",
+                "sample": "",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "groups_associated_groups.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "group_id",
+                "type": "string",
+                "sample": "G1028",
+                "include": true
+              },
+              {
+                "name": "associated_id",
+                "type": "string",
+                "sample": "Arid Viper",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "campaigns_groups.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "source ID",
+                "type": "string",
+                "sample": "C0028",
+                "include": true
+              },
+              {
+                "name": "target ID",
+                "type": "string",
+                "sample": "G0034",
+                "include": true
+              },
+              {
+                "name": "mapping description",
+                "type": "string",
+                "sample": "(Citation: Andy Greenberg June 2017) (Citation: US District Court Indictment GRU Unit 74455 October ...",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "associated_groups.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "associated_id",
+                "type": "string",
+                "sample": "Arid Viper",
+                "include": true
+              },
+              {
+                "name": "citation",
+                "type": "string",
+                "sample": "welivesecurity_apt-c-23",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "campaigns_software.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "source ID",
+                "type": "string",
+                "sample": "C0028",
+                "include": true
+              },
+              {
+                "name": "target ID",
+                "type": "string",
+                "sample": "S0089",
+                "include": true
+              },
+              {
+                "name": "mapping description",
+                "type": "string",
+                "sample": "(Citation: Booz Allen Hamilton)",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "software_techniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "source ID",
+                "type": "string",
+                "sample": "S0066",
+                "include": true
+              },
+              {
+                "name": "target ID",
+                "type": "string",
+                "sample": "T1083",
+                "include": true
+              },
+              {
+                "name": "mapping description",
+                "type": "string",
+                "sample": "[3PARA RAT](https://attack.mitre.org/software/S0066) has a command to retrieve metadata for files on...",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "software_subtechniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "source ID",
+                "type": "string",
+                "sample": "S0066",
+                "include": true
+              },
+              {
+                "name": "target ID",
+                "type": "string",
+                "sample": "T1573.001",
+                "include": true
+              },
+              {
+                "name": "mapping description",
+                "type": "string",
+                "sample": "[3PARA RAT](https://attack.mitre.org/software/S0066) command and control commands are encrypted with...",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "mitigations_techniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "source ID",
+                "type": "string",
+                "sample": "M1036",
+                "include": true
+              },
+              {
+                "name": "target ID",
+                "type": "string",
+                "sample": "T1110",
+                "include": true
+              },
+              {
+                "name": "mapping description",
+                "type": "string",
+                "sample": "Set account lockout policies after a certain number of failed login attempts to prevent passwords fr...",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "mitigations_subtechniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "source ID",
+                "type": "string",
+                "sample": "M1036",
+                "include": true
+              },
+              {
+                "name": "target ID",
+                "type": "string",
+                "sample": "T1550.001",
+                "include": true
+              },
+              {
+                "name": "mapping description",
+                "type": "string",
+                "sample": "Where possible, consider restricting the use of access tokens outside of expected contexts. For exam...",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "groups_techniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "source ID",
+                "type": "string",
+                "sample": "G0099",
+                "include": true
+              },
+              {
+                "name": "target ID",
+                "type": "string",
+                "sample": "T1105",
+                "include": true
+              },
+              {
+                "name": "mapping description",
+                "type": "string",
+                "sample": "[APT-C-36](https://attack.mitre.org/groups/G0099) has downloaded binary data from a specified domain...",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "groups_subtechniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "source ID",
+                "type": "string",
+                "sample": "G0099",
+                "include": true
+              },
+              {
+                "name": "target ID",
+                "type": "string",
+                "sample": "T1204.002",
+                "include": true
+              },
+              {
+                "name": "mapping description",
+                "type": "string",
+                "sample": "[APT-C-36](https://attack.mitre.org/groups/G0099) has prompted victims to accept macros in order to ...",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "campaigns_techniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "source ID",
+                "type": "string",
+                "sample": "C0028",
+                "include": true
+              },
+              {
+                "name": "target ID",
+                "type": "string",
+                "sample": "T1133",
+                "include": true
+              },
+              {
+                "name": "mapping description",
+                "type": "string",
+                "sample": "During the [2015 Ukraine Electric Power Attack](https://attack.mitre.org/campaigns/C0028), [Sandworm...",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "campaigns_subtechniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "source ID",
+                "type": "string",
+                "sample": "C0028",
+                "include": true
+              },
+              {
+                "name": "target ID",
+                "type": "string",
+                "sample": "T1562.001",
+                "include": true
+              },
+              {
+                "name": "mapping description",
+                "type": "string",
+                "sample": "During the [2015 Ukraine Electric Power Attack](https://attack.mitre.org/campaigns/C0028), [Sandworm...",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "campaigns.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "ID",
+                "type": "string",
+                "sample": "C0028",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "2015 Ukraine Electric Power Attack",
+                "include": true
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "sample": "[2015 Ukraine Electric Power Attack](https://attack.mitre.org/campaigns/C0028) was a [Sandworm Team]...",
+                "include": true
+              },
+              {
+                "name": "first seen",
+                "type": "string",
+                "sample": "01 December 2015",
+                "include": true
+              },
+              {
+                "name": "last seen",
+                "type": "string",
+                "sample": "01 January 2016",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "software.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "ID",
+                "type": "string",
+                "sample": "S0066",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "3PARA RAT",
+                "include": true
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "sample": "[3PARA RAT](https://attack.mitre.org/software/S0066) is a remote access tool (RAT) programmed in C++...",
+                "include": true
+              },
+              {
+                "name": "platforms",
+                "type": "string",
+                "sample": "Windows",
+                "include": true
+              },
+              {
+                "name": "type",
+                "type": "string",
+                "sample": "malware",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "groups.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "ID",
+                "type": "string",
+                "sample": "G1028",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "APT-C-23",
+                "include": true
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "sample": "[APT-C-23](https://attack.mitre.org/groups/G1028) is a threat group that has been active since at le...",
+                "include": true
+              },
+              {
+                "name": "created",
+                "type": "string",
+                "sample": "26 March 2024",
+                "include": true
+              },
+              {
+                "name": "last modified",
+                "type": "string",
+                "sample": "16 April 2024",
+                "include": true
+              },
+              {
+                "name": "associated groups",
+                "type": "string",
+                "sample": "['Arid Viper', 'Big Bang APT', 'Desert Falcon', 'Grey Karkadann', 'Mantis', 'TAG-63', 'Two-tailed Sc...",
+                "include": true
+              },
+              {
+                "name": "associated groups citations",
+                "type": "string",
+                "sample": "['welivesecurity_apt-c-23', 'sentinelone_israel_hamas_war', 'fb_arid_viper', 'checkpoint_interactive...",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "techniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "ID",
+                "type": "string",
+                "sample": "T1548",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "Abuse Elevation Control Mechanism",
+                "include": true
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "sample": "Adversaries may circumvent mechanisms designed to control elevate privileges to gain higher-level pe...",
+                "include": true
+              },
+              {
+                "name": "detection",
+                "type": "string",
+                "sample": "Monitor the file system for files that have the setuid or setgid bits set. Also look for any process...",
+                "include": true
+              },
+              {
+                "name": "platforms",
+                "type": "string",
+                "sample": "IaaS, Identity Provider, Linux, Office Suite, Windows, macOS",
+                "include": true
+              },
+              {
+                "name": "defenses bypassed",
+                "type": "string",
+                "sample": "",
+                "include": true
+              },
+              {
+                "name": "permissions required",
+                "type": "string",
+                "sample": "Administrator, User",
+                "include": true
+              }
+            ]
+          },
+          {
+            "name": "subtechniques.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "ID",
+                "type": "string",
+                "sample": "T1548.002",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+                "include": true
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "sample": "Adversaries may bypass UAC mechanisms to elevate process privileges on system. Windows User Account ...",
+                "include": true
+              },
+              {
+                "name": "detection",
+                "type": "string",
+                "sample": "There are many ways to perform UAC bypasses when a user is in the local administrator group on a sys...",
+                "include": true
+              },
+              {
+                "name": "platforms",
+                "type": "string",
+                "sample": "Windows",
+                "include": true
+              },
+              {
+                "name": "defenses bypassed",
+                "type": "string",
+                "sample": "Windows User Account Control",
+                "include": true
+              },
+              {
+                "name": "permissions required",
+                "type": "string",
+                "sample": "Administrator, User",
+                "include": true
+              }
+            ]
+          }
+        ]
+      },
+      "nodeMappings": [
+        {
+          "node": {
+            "$ref": "#n:7"
+          },
+          "tableName": "associated_groups.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "associated_id",
+              "property": {
+                "$ref": "#p:3"
+              }
+            },
+            {
+              "fieldName": "citation",
+              "property": {
+                "$ref": "#p:4"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:2"
+          },
+          "tableName": "tactics.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "ID",
+              "property": {
+                "$ref": "#p:1"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:2"
+              }
+            },
+            {
+              "fieldName": "description",
+              "property": {
+                "$ref": "#p:5"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:1"
+          },
+          "tableName": "techniques.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "ID",
+              "property": {
+                "$ref": "#p:6"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:7"
+              }
+            },
+            {
+              "fieldName": "description",
+              "property": {
+                "$ref": "#p:8"
+              }
+            },
+            {
+              "fieldName": "detection",
+              "property": {
+                "$ref": "#p:9"
+              }
+            },
+            {
+              "fieldName": "platforms",
+              "property": {
+                "$ref": "#p:20"
+              }
+            },
+            {
+              "fieldName": "defenses bypassed",
+              "property": {
+                "$ref": "#p:21"
+              }
+            },
+            {
+              "fieldName": "permissions required",
+              "property": {
+                "$ref": "#p:22"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:8"
+          },
+          "tableName": "campaigns.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "ID",
+              "property": {
+                "$ref": "#p:10"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:11"
+              }
+            },
+            {
+              "fieldName": "description",
+              "property": {
+                "$ref": "#p:12"
+              }
+            },
+            {
+              "fieldName": "first seen",
+              "property": {
+                "$ref": "#p:13"
+              }
+            },
+            {
+              "fieldName": "last seen",
+              "property": {
+                "$ref": "#p:14"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:6"
+          },
+          "tableName": "software.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "ID",
+              "property": {
+                "$ref": "#p:15"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:16"
+              }
+            },
+            {
+              "fieldName": "description",
+              "property": {
+                "$ref": "#p:17"
+              }
+            },
+            {
+              "fieldName": "platforms",
+              "property": {
+                "$ref": "#p:18"
+              }
+            },
+            {
+              "fieldName": "type",
+              "property": {
+                "$ref": "#p:19"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:5"
+          },
+          "tableName": "groups.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "ID",
+              "property": {
+                "$ref": "#p:23"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:24"
+              }
+            },
+            {
+              "fieldName": "description",
+              "property": {
+                "$ref": "#p:25"
+              }
+            },
+            {
+              "fieldName": "created",
+              "property": {
+                "$ref": "#p:26"
+              }
+            },
+            {
+              "fieldName": "last modified",
+              "property": {
+                "$ref": "#p:27"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:3"
+          },
+          "tableName": "subtechniques.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "ID",
+              "property": {
+                "$ref": "#p:28"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:29"
+              }
+            },
+            {
+              "fieldName": "description",
+              "property": {
+                "$ref": "#p:30"
+              }
+            },
+            {
+              "fieldName": "detection",
+              "property": {
+                "$ref": "#p:31"
+              }
+            },
+            {
+              "fieldName": "platforms",
+              "property": {
+                "$ref": "#p:32"
+              }
+            },
+            {
+              "fieldName": "defenses bypassed",
+              "property": {
+                "$ref": "#p:33"
+              }
+            },
+            {
+              "fieldName": "permissions required",
+              "property": {
+                "$ref": "#p:34"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:4"
+          },
+          "tableName": "mitigations.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "ID",
+              "property": {
+                "$ref": "#p:35"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:36"
+              }
+            },
+            {
+              "fieldName": "description",
+              "property": {
+                "$ref": "#p:37"
+              }
+            }
+          ]
+        }
+      ],
+      "relationshipMappings": [
+        {
+          "relationship": {
+            "$ref": "#r:1"
+          },
+          "tableName": "tactics_techniques.csv",
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "tactic_id"
+          },
+          "toMapping": {
+            "fieldName": "technique_id"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:14"
+          },
+          "tableName": "campaigns_groups.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "mapping description",
+              "property": {
+                "$ref": "#p:42"
+              }
+            }
+          ],
+          "toMapping": {
+            "fieldName": "target ID"
+          },
+          "fromMapping": {
+            "fieldName": "source ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:3"
+          },
+          "tableName": "campaigns_techniques.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "mapping description",
+              "property": {
+                "$ref": "#p:45"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "source ID"
+          },
+          "toMapping": {
+            "fieldName": "target ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:4"
+          },
+          "tableName": "campaigns_subtechniques.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "mapping description",
+              "property": {
+                "$ref": "#p:48"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "source ID"
+          },
+          "toMapping": {
+            "fieldName": "target ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:6"
+          },
+          "tableName": "campaigns_software.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "mapping description",
+              "property": {
+                "$ref": "#p:49"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "source ID"
+          },
+          "toMapping": {
+            "fieldName": "target ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:5"
+          },
+          "tableName": "groups_associated_groups.csv",
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "associated_id"
+          },
+          "toMapping": {
+            "fieldName": "group_id"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:12"
+          },
+          "tableName": "groups_subtechniques.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "mapping description",
+              "property": {
+                "$ref": "#p:43"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "source ID"
+          },
+          "toMapping": {
+            "fieldName": "target ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:13"
+          },
+          "tableName": "groups_techniques.csv",
+          "propertyMappings": [
+            {
+              "property": {
+                "$ref": "#p:44"
+              },
+              "fieldName": "mapping description"
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "source ID"
+          },
+          "toMapping": {
+            "fieldName": "target ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:11"
+          },
+          "tableName": "groups_software.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "mapping description",
+              "property": {
+                "$ref": "#p:50"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "source ID"
+          },
+          "toMapping": {
+            "fieldName": "target ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:10"
+          },
+          "tableName": "mitigations_subtechniques.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "mapping description",
+              "property": {
+                "$ref": "#p:51"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "source ID"
+          },
+          "toMapping": {
+            "fieldName": "target ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:7"
+          },
+          "tableName": "software_subtechniques.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "mapping description",
+              "property": {
+                "$ref": "#p:52"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "source ID"
+          },
+          "toMapping": {
+            "fieldName": "target ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:2"
+          },
+          "tableName": "subtechniques_techniques.csv",
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "sub-technique of"
+          },
+          "toMapping": {
+            "fieldName": "subtechnique_id"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:8"
+          },
+          "tableName": "software_techniques.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "mapping description",
+              "property": {
+                "$ref": "#p:53"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "source ID"
+          },
+          "toMapping": {
+            "fieldName": "target ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:9"
+          },
+          "tableName": "mitigations_techniques.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "mapping description",
+              "property": {
+                "$ref": "#p:54"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "source ID"
+          },
+          "toMapping": {
+            "fieldName": "target ID"
+          }
+        }
+      ]
+    },
+    "configurations": {
+      "idsToIgnore": []
+    }
+  }
+}

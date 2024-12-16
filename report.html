@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-12-15 Sun 21:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DB Project: Cybersecurity Knowledge Base</title>
+<meta name="author" content="selffins" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">DB Project: Cybersecurity Knowledge Base</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org481db34">1. Requirements Analysis and Conceptual Design</a>
+<ul>
+<li><a href="#org8e84238">1.1. Cybersecurity Knowledge Base</a></li>
+<li><a href="#org1617b92">1.2. Purpose</a></li>
+<li><a href="#org420faf5">1.3. Key Components</a></li>
+<li><a href="#orgd180e58">1.4. Conceptual Design</a></li>
+<li><a href="#org87ac9ae">1.5. Entity-Relationship Diagram</a></li>
+<li><a href="#org3b349f3">1.6. Normalization</a></li>
+<li><a href="#org5db8355">1.7. Database Schema</a></li>
+</ul>
+</li>
+<li><a href="#org1f4f8f5">2. Dataset</a></li>
+<li><a href="#org39b8f78">3. Scripts for data insertion</a></li>
+<li><a href="#orgd9e024b">4. Querying</a>
+<ul>
+<li><a href="#orgfbb78b6">4.1. Get all mitigations for a certain technique</a></li>
+<li><a href="#org2dae85d">4.2. All software ever used in a documented APT campaign</a></li>
+<li><a href="#org1e03a20">4.3. All mitigations associated with a certain tactic</a></li>
+<li><a href="#org4041f3e">4.4. * Get all mitigations for a specific technique</a></li>
+<li><a href="#org5bfeca7">4.5. Find all subtechniques for a technique</a></li>
+<li><a href="#org164cfc0">4.6. Get all tactics and their techniques</a></li>
+<li><a href="#org8b251df">4.7. Find all software used by a group</a></li>
+<li><a href="#org537782b">4.8. Get all campaigns involving a specific group</a></li>
+<li><a href="#org7e1522e">4.9. Find all techniques/subtechniques in a specific campaign</a></li>
+<li><a href="#org5dc67b6">4.10. Get all associated groups for a specific group</a></li>
+<li><a href="#org48085bb">4.11. Find all groups using techniques mitigated by specific mitigations</a></li>
+<li><a href="#orgbe37ec4">4.12. Get all campaigns that use software implementing techniques in a specific tactic</a></li>
+<li><a href="#orgc1d09f5">4.13. Find all tactics that indirectly involve a specific campaign through groups and techniques</a></li>
+<li><a href="#org6aa733c">4.14. Retrieve subtechniques and their parent techniques, but only if both are used in the same campaign</a></li>
+<li><a href="#orgb57fe9c">4.15. Find all mitigations that impact software used in campaigns involving specific groups</a></li>
+<li><a href="#org9b77b53">4.16. And so on.</a></li>
+</ul>
+</li>
+<li><a href="#org1b21808">5. Report generation</a>
+<ul>
+<li><a href="#org9558717">5.1. Use Case 1: Identify mitigations for high-risk campaigns</a>
+<ul>
+<li><a href="#orgc1e594e">5.1.1. Query 1: Get all mitigations for techniques used in a specific campaign</a></li>
+<li><a href="#orgbb07cf0">5.1.2. Query 2: Find mitigations affecting subtechniques in a specific campaign</a></li>
+</ul>
+</li>
+<li><a href="#org326ed36">5.2. Use Case 2: Map group tactics and software connections</a>
+<ul>
+<li><a href="#org97a3566">5.2.1. Query 1: Find all tactics associated with techniques used by a group</a></li>
+<li><a href="#orgc819924">5.2.2. Query 2: Get all software used by a group and linked to a tactic</a></li>
+</ul>
+</li>
+<li><a href="#orgd8d18a4">5.3. Use Case 3: Explore campaign relationships with associated groups</a>
+<ul>
+<li><a href="#orgedadbcb">5.3.1. Query 1: Find all groups involved in campaigns using specific techniques</a></li>
+<li><a href="#org56b5184">5.3.2. Query 2: Retrieve associated groups for campaigns targeting a specific group</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgd9200e7">6. Performance Tuning</a></li>
+<li><a href="#org7f9eeb5">7. Project Documentation</a>
+<ul>
+<li><a href="#orgdf840fb">7.1. Requires: jupyter, pandas, openpyxl (for the notebook.ipynb)</a></li>
+<li><a href="#org540a66c">7.2. Database is hosted in a neo4j Aura account</a>
+<ul>
+<li><a href="#org13720ad">7.2.1. You can make an account and then contact me to invite you into my neo4j organization.</a></li>
+</ul>
+</li>
+<li><a href="#orgb336556">7.3. You can import my data model and import the nodes and relationships.</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org481db34" class="outline-2">
+<h2 id="org481db34"><span class="section-number-2">1.</span> Requirements Analysis and Conceptual Design</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org8e84238" class="outline-3">
+<h3 id="org8e84238"><span class="section-number-3">1.1.</span> Cybersecurity Knowledge Base</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+The MITRE ATT&amp;CK Matrix is a structured framework that organizes Tactics, Techniques, and Subtechniques used by adversaries, including Advanced Persistent Threats (APTs), to exploit vulnerabilities like Common Vulnerabilities and Exposures (CVEs)
+</p>
+</div>
+</div>
+<div id="outline-container-org1617b92" class="outline-3">
+<h3 id="org1617b92"><span class="section-number-3">1.2.</span> Purpose</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+This knowledge base aims to help cybersecurity professionals:
+</p>
+<ul class="org-ul">
+<li>understand the goals and methods of cybersecurity threats</li>
+<li>identify what mitigations can be used for threats</li>
+<li>get background knowledge of active APT groups as well as previous campaigns</li>
+<li>get information about a specific malicious software</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org420faf5" class="outline-3">
+<h3 id="org420faf5"><span class="section-number-3">1.3.</span> Key Components</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>Tactics - The high level objectives of a threat actor.
+<ul class="org-ul">
+<li>Example: The tactic &ldquo;Execution&rdquo; (TA0002) involves the execution of malicious code on a target machine.</li>
+</ul></li>
+<li>Techniques - Refers to how adversaries achieve their tactics.
+<ul class="org-ul">
+<li>Example: The technique &ldquo;Scheduled Task Job (T1053)&rdquo; under &ldquo;Execution&rdquo; (TA0002) refers to abusing task-scheduling functions to execute malicious code.</li>
+</ul></li>
+<li>Subtechniques - Refers to specific implementations of a technique
+<ul class="org-ul">
+<li>Example: A subtechnique of T1053 is &ldquo;Systemd Timers&rdquo; (T1053.006). Systemd timers are unit files used to control</li>
+</ul></li>
+<li>Mitigations - how to defend against threats</li>
+<li>Software - tools used by threats</li>
+<li>Groups - an APT group; typically acts in a campaign and uses similar techniques and software</li>
+<li>Campaigns - a specific period of cybersecurity attack; like 2015 Ukraine Hacks</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd180e58" class="outline-3">
+<h3 id="orgd180e58"><span class="section-number-3">1.4.</span> Conceptual Design</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+A knowledge base is best represented as a knowledge graph. So, we will use a graph database `neo4j`.
+</p>
+
+<p>
+A node will be labeled tactic, technique&#x2026; so on, and will have properties such as a name.
+Nodes are connected to another node via a &ldquo;relationship&rdquo; - a relationship has a name and can have attributes such as &rsquo;relation description&rsquo;.
+</p>
+
+<p>
+We have a list of nodes (bolded) and relationships (unbolded).
+</p>
+
+<ul class="org-ul">
+<li><b><b>associated-group</b></b></li>
+<li><b><b>campaigns</b></b></li>
+<li>campaigns-groups</li>
+<li>campaigns-software</li>
+<li>campaigns-subtechniques</li>
+<li>campaigns-techniques</li>
+<li>groups-associated-groups</li>
+<li>groups-software</li>
+<li>groups-subtechniques</li>
+<li>groups-techniques</li>
+<li><b><b>mitigations</b></b></li>
+<li>mitigations-subtechniques</li>
+<li>mitigations-techniques</li>
+<li><b><b>software</b></b></li>
+<li>software-subtechniques</li>
+<li>software-techniques</li>
+<li><b><b>subtechniques</b></b></li>
+<li>subtechniques-techniques</li>
+<li><b><b>tactics</b></b></li>
+<li>tactics-techniques</li>
+<li>techniques</li>
+<li><b><b>groups</b></b></li>
+</ul>
+
+<p>
+Basically, tactics have techniques. Techniques have subtechniques. Campaigns involve the use of certain groups, software, subtechniques or techniques. Groups are associated to other miinor groups &ldquo;associated group&rdquo; - they aren&rsquo;t considered their own APT. Groups use certain software, subtechniques, and techniques. Mitigations mitigate techniques and subtechniques. Software uses certain techniques and subtechniques.
+</p>
+
+<p>
+The data comes as an .xlsx from MITRE ATT&amp;CK.
+</p>
+</div>
+</div>
+<div id="outline-container-org87ac9ae" class="outline-3">
+<h3 id="org87ac9ae"><span class="section-number-3">1.5.</span> Entity-Relationship Diagram</h3>
+<div class="outline-text-3" id="text-1-5">
+
+<div id="org3ef7d64" class="figure">
+<p><img src="file:///home/selffins/Pictures/Screenshots/erd.png" alt="erd.png" width="70%" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org3b349f3" class="outline-3">
+<h3 id="org3b349f3"><span class="section-number-3">1.6.</span> Normalization</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>See: notebook.ipynb for examples</li>
+<li>We explode (create a new row for each item in a list) multi-valued columns like &ldquo;associated groups&rdquo; (for the table Group) and make it their own table.</li>
+<li>techniques.xlsx used to have an attribute &ldquo;is subtechnique&rdquo; and &ldquo;subtechnique of&rdquo; - we normalize by retrieving all subtechniques and placing them in their tables</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5db8355" class="outline-3">
+<h3 id="org5db8355"><span class="section-number-3">1.7.</span> Database Schema</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+Since I am using `neo4j`, the database language is `Cypher`. Here is how I created the nodes and relationships. This is the generated import code and also code for defining the nodes, relationships and properties/attributes (e.g. schema)
+</p>
+
+<div class="org-src-container">
+<pre class="src src-nil">// CONSTRAINT creation
+// -------------------
+// Create node uniqueness constraints, ensuring no duplicates for the given node label and ID property exist in the database. This also ensures no duplicates are introduced in future.
+//
+CREATE CONSTRAINT `ID_Technique_uniq` IF NOT EXISTS
+FOR (n: `Technique`)
+REQUIRE (n.`ID`) IS UNIQUE;
+CREATE CONSTRAINT `ID_Tactic_uniq` IF NOT EXISTS
+FOR (n: `Tactic`)
+REQUIRE (n.`ID`) IS UNIQUE;
+CREATE CONSTRAINT `ID_Subtechnique_uniq` IF NOT EXISTS
+FOR (n: `Subtechnique`)
+REQUIRE (n.`ID`) IS UNIQUE;
+CREATE CONSTRAINT `ID_Group_uniq` IF NOT EXISTS
+FOR (n: `Group`)
+REQUIRE (n.`ID`) IS UNIQUE;
+CREATE CONSTRAINT `ID_Software_uniq` IF NOT EXISTS
+FOR (n: `Software`)
+REQUIRE (n.`ID`) IS UNIQUE;
+CREATE CONSTRAINT `associated_id_Associated_Group_uniq` IF NOT EXISTS
+FOR (n: `Associated Group`)
+REQUIRE (n.`associated_id`) IS UNIQUE;
+CREATE CONSTRAINT `ID_Campaign_uniq` IF NOT EXISTS
+FOR (n: `Campaign`)
+REQUIRE (n.`ID`) IS UNIQUE;
+CREATE CONSTRAINT `ID_Mitigation_uniq` IF NOT EXISTS
+FOR (n: `Mitigation`)
+REQUIRE (n.`ID`) IS UNIQUE;
+
+// NODE load
+// ---------
+//
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_2) AS row
+WITH row
+WHERE NOT row.`ID` IN $idsToSkip AND NOT row.`ID` IS NULL
+CALL {
+  WITH row
+  MERGE (n: `Technique` { `ID`: row.`ID` })
+  SET n.`ID` = row.`ID`
+  SET n.`name` = row.`name`
+  SET n.`description` = row.`description`
+  SET n.`detection` = row.`detection`
+  SET n.`platforms` = row.`platforms`
+  SET n.`defenses bypassed` = row.`defenses bypassed`
+  SET n.`permissions required` = row.`permissions required`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_1) AS row
+WITH row
+WHERE NOT row.`ID` IN $idsToSkip AND NOT row.`ID` IS NULL
+CALL {
+  WITH row
+  MERGE (n: `Tactic` { `ID`: row.`ID` })
+  SET n.`ID` = row.`ID`
+  SET n.`name` = row.`name`
+  SET n.`description` = row.`description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_6) AS row
+WITH row
+WHERE NOT row.`ID` IN $idsToSkip AND NOT row.`ID` IS NULL
+CALL {
+  WITH row
+  MERGE (n: `Subtechnique` { `ID`: row.`ID` })
+  SET n.`ID` = row.`ID`
+  SET n.`name` = row.`name`
+  SET n.`description` = row.`description`
+  SET n.`detection` = row.`detection`
+  SET n.`platforms` = row.`platforms`
+  SET n.`defenses bypassed` = row.`defenses bypassed`
+  SET n.`permissions required` = row.`permissions required`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_5) AS row
+WITH row
+WHERE NOT row.`ID` IN $idsToSkip AND NOT row.`ID` IS NULL
+CALL {
+  WITH row
+  MERGE (n: `Group` { `ID`: row.`ID` })
+  SET n.`ID` = row.`ID`
+  SET n.`name` = row.`name`
+  SET n.`description` = row.`description`
+  SET n.`created` = datetime(row.`created`)
+  SET n.`last modified` = datetime(row.`last modified`)
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_4) AS row
+WITH row
+WHERE NOT row.`ID` IN $idsToSkip AND NOT row.`ID` IS NULL
+CALL {
+  WITH row
+  MERGE (n: `Software` { `ID`: row.`ID` })
+  SET n.`ID` = row.`ID`
+  SET n.`name` = row.`name`
+  SET n.`description` = row.`description`
+  SET n.`platforms` = row.`platforms`
+  SET n.`type` = row.`type`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_0) AS row
+WITH row
+WHERE NOT row.`associated_id` IN $idsToSkip AND NOT row.`associated_id` IS NULL
+CALL {
+  WITH row
+  MERGE (n: `Associated Group` { `associated_id`: row.`associated_id` })
+  SET n.`associated_id` = row.`associated_id`
+  SET n.`citation` = row.`citation`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_3) AS row
+WITH row
+WHERE NOT row.`ID` IN $idsToSkip AND NOT row.`ID` IS NULL
+CALL {
+  WITH row
+  MERGE (n: `Campaign` { `ID`: row.`ID` })
+  SET n.`ID` = row.`ID`
+  SET n.`name` = row.`name`
+  SET n.`description` = row.`description`
+  SET n.`first seen` = datetime(row.`first seen`)
+  SET n.`last seen` = datetime(row.`last seen`)
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_7) AS row
+WITH row
+WHERE NOT row.`ID` IN $idsToSkip AND NOT row.`ID` IS NULL
+CALL {
+  WITH row
+  MERGE (n: `Mitigation` { `ID`: row.`ID` })
+  SET n.`ID` = row.`ID`
+  SET n.`name` = row.`name`
+  SET n.`description` = row.`description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+
+// RELATIONSHIP load
+// -----------------
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_8) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Tactic` { `ID`: row.`tactic_id` })
+  MATCH (target: `Technique` { `ID`: row.`technique_id` })
+  MERGE (source)-[r: `achieved by`]-&gt;(target)
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_19) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Technique` { `ID`: row.`sub-technique of` })
+  MATCH (target: `Subtechnique` { `ID`: row.`subtechnique_id` })
+  MERGE (source)-[r: `includes`]-&gt;(target)
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_10) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Campaign` { `ID`: row.`source ID` })
+  MATCH (target: `Technique` { `ID`: row.`target ID` })
+  MERGE (source)-[r: `involved`]-&gt;(target)
+  SET r.`description` = row.`mapping description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_11) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Campaign` { `ID`: row.`source ID` })
+  MATCH (target: `Subtechnique` { `ID`: row.`target ID` })
+  MERGE (source)-[r: `involved`]-&gt;(target)
+  SET r.`description` = row.`mapping description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_13) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Associated Group` { `associated_id`: row.`associated_id` })
+  MATCH (target: `Group` { `ID`: row.`group_id` })
+  MERGE (source)-[r: `associated`]-&gt;(target)
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_12) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Campaign` { `ID`: row.`source ID` })
+  MATCH (target: `Software` { `ID`: row.`target ID` })
+  MERGE (source)-[r: `involved`]-&gt;(target)
+  SET r.`description` = row.`mapping description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_18) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Software` { `ID`: row.`source ID` })
+  MATCH (target: `Subtechnique` { `ID`: row.`target ID` })
+  MERGE (source)-[r: `used for`]-&gt;(target)
+  SET r.`mapping description` = row.`mapping description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_20) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Software` { `ID`: row.`source ID` })
+  MATCH (target: `Technique` { `ID`: row.`target ID` })
+  MERGE (source)-[r: `used for`]-&gt;(target)
+  SET r.`description` = row.`mapping description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_21) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Mitigation` { `ID`: row.`source ID` })
+  MATCH (target: `Technique` { `ID`: row.`target ID` })
+  MERGE (source)-[r: `mitigates`]-&gt;(target)
+  SET r.`description` = row.`mapping description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_17) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Mitigation` { `ID`: row.`source ID` })
+  MATCH (target: `Subtechnique` { `ID`: row.`target ID` })
+  MERGE (source)-[r: `mitigates`]-&gt;(target)
+  SET r.`description` = row.`mapping description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_16) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Group` { `ID`: row.`source ID` })
+  MATCH (target: `Software` { `ID`: row.`target ID` })
+  MERGE (source)-[r: `uses`]-&gt;(target)
+  SET r.`description` = row.`mapping description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_14) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Group` { `ID`: row.`source ID` })
+  MATCH (target: `Subtechnique` { `ID`: row.`target ID` })
+  MERGE (source)-[r: `uses`]-&gt;(target)
+  SET r.`mapping description` = row.`mapping description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_15) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Group` { `ID`: row.`source ID` })
+  MATCH (target: `Technique` { `ID`: row.`target ID` })
+  MERGE (source)-[r: `uses`]-&gt;(target)
+  SET r.`description` = row.`mapping description`
+} IN TRANSACTIONS OF 10000 ROWS;
+
+LOAD CSV WITH HEADERS FROM ($file_path_root + $file_9) AS row
+WITH row
+CALL {
+  WITH row
+  MATCH (source: `Campaign` { `ID`: row.`source ID` })
+  MATCH (target: `Group` { `ID`: row.`target ID` })
+  MERGE (source)-[r: `involved`]-&gt;(target)
+  SET r.`citation` = row.`mapping description`
+} IN TRANSACTIONS OF 10000 ROWS;
+</pre>
+</div>
+
+<p>
+It creates this following `data model` for a graph database (properties are not shown &#x2013; refer to import code)
+</p>
+
+
+<div id="org2f85d94" class="figure">
+<p><img src="file:///home/selffins/Pictures/Screenshots/model.png" alt="model.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1f4f8f5" class="outline-2">
+<h2 id="org1f4f8f5"><span class="section-number-2">2.</span> Dataset</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>Downloaded .xlsx files for &ldquo;enterprise-matrix&rdquo; <a href="https://attack.mitre.org/resources/attack-data-and-tools/">https://attack.mitre.org/resources/attack-data-and-tools/</a></li>
+<li>Processed into .csv</li>
+<li>Dataset was explored and processed in notebook.ipynb</li>
+<li>There were a lot of irrelevant columns that we removed</li>
+<li>We cared more about names, descriptions - so most of our data are strings.</li>
+<li>You can also check the dataset in `/clean` and `/xlsx`</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org39b8f78" class="outline-2">
+<h2 id="org39b8f78"><span class="section-number-2">3.</span> Scripts for data insertion</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>Data insertion script is written in the &ldquo;Database Schema&rdquo; section.</li>
+<li>Practically, it was &ldquo;make a .csv&rdquo; and &ldquo;drag to .csv importer&rdquo; using the `neo4j Aura` website.</li>
+<li>Data processing was documented thoroughly in `/data/notebook.ipynb`</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd9e024b" class="outline-2">
+<h2 id="orgd9e024b"><span class="section-number-2">4.</span> Querying</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Here is an example of a Cypher query.
+</p>
+
+<p>
+Note in the website, you are able to select nodes, display as table, check properties of a node, check properties of a relationship (arrow), etc.
+</p>
+</div>
+<div id="outline-container-orgfbb78b6" class="outline-3">
+<h3 id="orgfbb78b6"><span class="section-number-3">4.1.</span> Get all mitigations for a certain technique</h3>
+<div class="outline-text-3" id="text-4-1">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(m:Mitigation)-[:mitigates]-&gt;(t:Technique)
+     WHERE t.ID = "T1110"
+     RETURN p
+
+</pre>
+</div>
+
+<ul class="org-ul">
+<li><img src="file:///home/selffins/Pictures/Screenshots/query.png" alt="query.png" /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2dae85d" class="outline-3">
+<h3 id="org2dae85d"><span class="section-number-3">4.2.</span> All software ever used in a documented APT campaign</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<div id="org46640da" class="figure">
+<p><img src="file:///home/selffins/Pictures/Screenshots/campaigns.png" alt="campaigns.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org1e03a20" class="outline-3">
+<h3 id="org1e03a20"><span class="section-number-3">4.3.</span> All mitigations associated with a certain tactic</h3>
+<div class="outline-text-3" id="text-4-3">
+
+<div id="org13e252f" class="figure">
+<p><img src="file:///home/selffins/Pictures/Screenshots/initial.png" alt="initial.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org4041f3e" class="outline-3">
+<h3 id="org4041f3e"><span class="section-number-3">4.4.</span> * Get all mitigations for a specific technique</h3>
+<div class="outline-text-3" id="text-4-4">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(ta:Tactic)-[:`achieved by`]-&gt;(tech:Technique)&lt;-[:`mitigates`]-(m:Mitigation)
+WHERE ta.ID = "TA0001"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5bfeca7" class="outline-3">
+<h3 id="org5bfeca7"><span class="section-number-3">4.5.</span> Find all subtechniques for a technique</h3>
+<div class="outline-text-3" id="text-4-5">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(tech:Technique)-[:`includes`]-&gt;(sub:Subtechnique)
+WHERE tech.ID = "T1548"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org164cfc0" class="outline-3">
+<h3 id="org164cfc0"><span class="section-number-3">4.6.</span> Get all tactics and their techniques</h3>
+<div class="outline-text-3" id="text-4-6">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(ta:Tactic)-[:`achieved by`]-&gt;(tech:Technique)
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org8b251df" class="outline-3">
+<h3 id="org8b251df"><span class="section-number-3">4.7.</span> Find all software used by a group</h3>
+<div class="outline-text-3" id="text-4-7">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(g:Group)-[:`uses`]-&gt;(s:Software)
+WHERE g.ID = "G1028"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org537782b" class="outline-3">
+<h3 id="org537782b"><span class="section-number-3">4.8.</span> Get all campaigns involving a specific group</h3>
+<div class="outline-text-3" id="text-4-8">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(c:Campaign)-[:`involved`]-&gt;(g:Group)
+WHERE g.ID = "G0034"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org7e1522e" class="outline-3">
+<h3 id="org7e1522e"><span class="section-number-3">4.9.</span> Find all techniques/subtechniques in a specific campaign</h3>
+<div class="outline-text-3" id="text-4-9">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(c:Campaign)-[:`involves`]-&gt;(t:Technique)
+WHERE c.ID = "C0028"
+RETURN p
+
+UNION
+
+MATCH p=(c:Campaign)-[:`involves`]-&gt;(s:Subtechnique)
+WHERE c.ID = "C0028"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5dc67b6" class="outline-3">
+<h3 id="org5dc67b6"><span class="section-number-3">4.10.</span> Get all associated groups for a specific group</h3>
+<div class="outline-text-3" id="text-4-10">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(g:Group)&lt;-[:`associated`]-(a:`Associated Group`)
+WHERE g.ID = "G1028"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org48085bb" class="outline-3">
+<h3 id="org48085bb"><span class="section-number-3">4.11.</span> Find all groups using techniques mitigated by specific mitigations</h3>
+<div class="outline-text-3" id="text-4-11">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(m:Mitigation)-[:`mitigates`]-&gt;(t:Technique)&lt;-[:`uses`]-(g:Group)
+WHERE m.ID = "M1036"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbe37ec4" class="outline-3">
+<h3 id="orgbe37ec4"><span class="section-number-3">4.12.</span> Get all campaigns that use software implementing techniques in a specific tactic</h3>
+<div class="outline-text-3" id="text-4-12">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(ta:Tactic)-[:`achieved by`]-&gt;(tech:Technique)&lt;-[:`used for`]-(s:Software)&lt;-[:involved]-(c:Campaign)
+WHERE ta.ID = "TA0005"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc1d09f5" class="outline-3">
+<h3 id="orgc1d09f5"><span class="section-number-3">4.13.</span> Find all tactics that indirectly involve a specific campaign through groups and techniques</h3>
+<div class="outline-text-3" id="text-4-13">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(c:Campaign)-[:`involved`]-&gt;(g:Group)-[:`uses`]-&gt;(t:Technique)&lt;-[:`achieved by`]-(ta:Tactic)
+WHERE c.ID = "C0028"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org6aa733c" class="outline-3">
+<h3 id="org6aa733c"><span class="section-number-3">4.14.</span> Retrieve subtechniques and their parent techniques, but only if both are used in the same campaign</h3>
+<div class="outline-text-3" id="text-4-14">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(c:Campaign)-[:involved]-&gt;(t:Technique)-[:includes]-&gt;(s:Subtechnique)
+WHERE c.ID = "C0028"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb57fe9c" class="outline-3">
+<h3 id="orgb57fe9c"><span class="section-number-3">4.15.</span> Find all mitigations that impact software used in campaigns involving specific groups</h3>
+<div class="outline-text-3" id="text-4-15">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(m:Mitigation)-[:`mitigates`]-&gt;(t:Technique)&lt;-[:`used for`]-(s:Software)&lt;-[:`involved`]-(c:Campaign)-[:`involved`]-&gt;(g:Group)
+WHERE g.ID = "G1015"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org9b77b53" class="outline-3">
+<h3 id="org9b77b53"><span class="section-number-3">4.16.</span> And so on.</h3>
+</div>
+</div>
+<div id="outline-container-org1b21808" class="outline-2">
+<h2 id="org1b21808"><span class="section-number-2">5.</span> Report generation</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+The following are examples of reports for certain use-cases. The user can include relevant graphs from the `neo4j Aura` website.
+</p>
+</div>
+<div id="outline-container-org9558717" class="outline-3">
+<h3 id="org9558717"><span class="section-number-3">5.1.</span> Use Case 1: Identify mitigations for high-risk campaigns</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-orgc1e594e" class="outline-4">
+<h4 id="orgc1e594e"><span class="section-number-4">5.1.1.</span> Query 1: Get all mitigations for techniques used in a specific campaign</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(c:Campaign)-[:`uses`]-&gt;(t:Technique)&lt;-[:`mitigates`]-(m:Mitigation)
+WHERE c.ID = "C0028"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbb07cf0" class="outline-4">
+<h4 id="orgbb07cf0"><span class="section-number-4">5.1.2.</span> Query 2: Find mitigations affecting subtechniques in a specific campaign</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(c:Campaign)-[:`uses`]-&gt;(s:Subtechnique)&lt;-[:`mitigates`]-(m:Mitigation)
+WHERE c.ID = "C0028"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org326ed36" class="outline-3">
+<h3 id="org326ed36"><span class="section-number-3">5.2.</span> Use Case 2: Map group tactics and software connections</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-org97a3566" class="outline-4">
+<h4 id="org97a3566"><span class="section-number-4">5.2.1.</span> Query 1: Find all tactics associated with techniques used by a group</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(g:Group)-[:`uses`]-&gt;(t:Technique)&lt;-[:`achieved by`]-(ta:Tactic)
+WHERE g.ID = "G1028"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc819924" class="outline-4">
+<h4 id="orgc819924"><span class="section-number-4">5.2.2.</span> Query 2: Get all software used by a group and linked to a tactic</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(g:Group)-[:`uses`]-&gt;(s:Software)-[:`used for`]-&gt;(t:Technique)&lt;-[:`achieved by`]-(ta:Tactic)
+WHERE g.ID = "G1028"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd8d18a4" class="outline-3">
+<h3 id="orgd8d18a4"><span class="section-number-3">5.3.</span> Use Case 3: Explore campaign relationships with associated groups</h3>
+<div class="outline-text-3" id="text-5-3">
+</div>
+<div id="outline-container-orgedadbcb" class="outline-4">
+<h4 id="orgedadbcb"><span class="section-number-4">5.3.1.</span> Query 1: Find all groups involved in campaigns using specific techniques</h4>
+<div class="outline-text-4" id="text-5-3-1">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(c:Campaign)-[:`involved`]-&gt;(t:Technique)&lt;-[:`uses`]-(g:Group)
+WHERE t.ID = "T1110"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org56b5184" class="outline-4">
+<h4 id="org56b5184"><span class="section-number-4">5.3.2.</span> Query 2: Retrieve associated groups for campaigns targeting a specific group</h4>
+<div class="outline-text-4" id="text-5-3-2">
+<div class="org-src-container">
+<pre class="src src-cypher">MATCH p=(c:Campaign)-[:`involved`]-&gt;(g:Group)-[:`associated`]-&gt;(a:`Associated Group`)
+WHERE g.ID = "G1028"
+RETURN p
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd9200e7" class="outline-2">
+<h2 id="orgd9200e7"><span class="section-number-2">6.</span> Performance Tuning</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>The database is hosted in the cloud.</li>
+<li>The total time for uploading our nodes and relationships is:  00:00:06
+<ul class="org-ul">
+<li>There are 1977 nodes and 17571 relationships.</li>
+</ul></li>
+<li>All node IDS have indexes by default in `neo4j Aura`</li>
+<li>Chosen schema minimized redundancy</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7f9eeb5" class="outline-2">
+<h2 id="org7f9eeb5"><span class="section-number-2">7.</span> Project Documentation</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgdf840fb" class="outline-3">
+<h3 id="orgdf840fb"><span class="section-number-3">7.1.</span> Requires: jupyter, pandas, openpyxl (for the notebook.ipynb)</h3>
+</div>
+<div id="outline-container-org540a66c" class="outline-3">
+<h3 id="org540a66c"><span class="section-number-3">7.2.</span> Database is hosted in a neo4j Aura account</h3>
+<div class="outline-text-3" id="text-7-2">
+</div>
+<div id="outline-container-org13720ad" class="outline-4">
+<h4 id="org13720ad"><span class="section-number-4">7.2.1.</span> You can make an account and then contact me to invite you into my neo4j organization.</h4>
+</div>
+</div>
+<div id="outline-container-orgb336556" class="outline-3">
+<h3 id="orgb336556"><span class="section-number-3">7.3.</span> You can import my data model and import the nodes and relationships.</h3>
+<div class="outline-text-3" id="text-7-3">
+<ol class="org-ol">
+<li>Make an account at <a href="https://neo4j.com/product/auradb/">https://neo4j.com/product/auradb/</a></li>
+<li>Import the data-model using the `.json` file in `/data`</li>
+<li>Drag the `.csv` files into the import</li>
+<li>You might need to manually do some steps to import it - like linking the `.csv` files to the data model&#x2026;</li>
+<li>Once imported, you can run queries.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: selffins</p>
+<p class="date">Created: 2024-12-15 Sun 21:14</p>
+</div>
+</body>
+</html>
