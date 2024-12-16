@@ -60,7 +60,7 @@ The data comes as an .xlsx from MITRE ATT&CK.
 
 ** Entity-Relationship Diagram
 #+ATTR_HTML: :width 70%
-[[/home/selffins/Pictures/Screenshots/erd.png]]
+[[./images/erd.png]]
 
 
 ** Normalization
@@ -349,7 +349,7 @@ CALL {
 
 It creates this following `data model` for a graph database (properties are not shown -- refer to import code)
 
-[[/home/selffins/Pictures/Screenshots/model.png]]
+[[./images/model.png]]
 
 * Dataset
 - Downloaded .xlsx files for "enterprise-matrix" https://attack.mitre.org/resources/attack-data-and-tools/
@@ -375,14 +375,14 @@ MATCH p=(m:Mitigation)-[:mitigates]->(t:Technique)
 
 #+END_SRC
 
-- [[/home/selffins/Pictures/Screenshots/query.png]]
+- [[./images/query.png]]
 
 
 ** All software ever used in a documented APT campaign
-[[/home/selffins/Pictures/Screenshots/campaigns.png]]
+[[./images/campaigns.png]]
 
 ** All mitigations associated with a certain tactic
-[[/home/selffins/Pictures/Screenshots/initial.png]]
+[[./images/initial.png]]
 
 ** * Get all mitigations for a specific technique
 #+BEGIN_SRC cypher

@@ -1,65 +1,65 @@
 
 # Table of Contents
 
-1.  [Requirements Analysis and Conceptual Design](#orgfe3f08b)
-    1.  [Cybersecurity Knowledge Base](#orgabafbfa)
-    2.  [Purpose](#org04a21b5)
-    3.  [Key Components](#orgc98036a)
-    4.  [Conceptual Design](#org5b8b1a9)
-    5.  [Entity-Relationship Diagram](#org71abc94)
-    6.  [Normalization](#orgca75be5)
-    7.  [Database Schema](#orgb4ebac9)
-2.  [Dataset](#org0d8b187)
-3.  [Scripts for data insertion](#orgffcae21)
-4.  [Querying](#orgdeba393)
-    1.  [Get all mitigations for a certain technique](#orgec22f98)
-    2.  [All software ever used in a documented APT campaign](#orgb512a9d)
-    3.  [All mitigations associated with a certain tactic](#orgbdff792)
-    4.  [\* Get all mitigations for a specific technique](#org55bcc1f)
-    5.  [Find all subtechniques for a technique](#org7176fa6)
-    6.  [Get all tactics and their techniques](#orgf027332)
-    7.  [Find all software used by a group](#org4ffaf3a)
-    8.  [Get all campaigns involving a specific group](#org0a646ee)
-    9.  [Find all techniques/subtechniques in a specific campaign](#org0702304)
-    10. [Get all associated groups for a specific group](#orgd9fdabb)
-    11. [Find all groups using techniques mitigated by specific mitigations](#orgada280f)
-    12. [Get all campaigns that use software implementing techniques in a specific tactic](#org832b798)
-    13. [Find all tactics that indirectly involve a specific campaign through groups and techniques](#org6acf0fb)
-    14. [Retrieve subtechniques and their parent techniques, but only if both are used in the same campaign](#org3550ce5)
-    15. [Find all mitigations that impact software used in campaigns involving specific groups](#org09855b0)
-    16. [And so on.](#org5a4b3ff)
-5.  [Report generation](#orgbe6473b)
-    1.  [Use Case 1: Identify mitigations for high-risk campaigns](#org75c5d66)
-        1.  [Query 1: Get all mitigations for techniques used in a specific campaign](#org404c333)
-        2.  [Query 2: Find mitigations affecting subtechniques in a specific campaign](#org844f8ee)
-    2.  [Use Case 2: Map group tactics and software connections](#orgd3b692b)
-        1.  [Query 1: Find all tactics associated with techniques used by a group](#org0cdfbc3)
-        2.  [Query 2: Get all software used by a group and linked to a tactic](#org42cd717)
-    3.  [Use Case 3: Explore campaign relationships with associated groups](#org9c3fbd3)
-        1.  [Query 1: Find all groups involved in campaigns using specific techniques](#orgfef9153)
-        2.  [Query 2: Retrieve associated groups for campaigns targeting a specific group](#orgae73062)
-6.  [Performance Tuning](#org3d3b9b6)
-7.  [Project Documentation](#orge8a860c)
-    1.  [Requires: jupyter, pandas, openpyxl (for the notebook.ipynb)](#orgf0566e6)
-    2.  [Database is hosted in a neo4j Aura account](#orgad4618d)
-        1.  [You can make an account and then contact me to invite you into my neo4j organization.](#org7327a6e)
-    3.  [You can import my data model and import the nodes and relationships.](#org1d2aad2)
+1.  [Requirements Analysis and Conceptual Design](#orgf61b686)
+    1.  [Cybersecurity Knowledge Base](#org4a6b0b3)
+    2.  [Purpose](#org42b8fe3)
+    3.  [Key Components](#orga0ad2e5)
+    4.  [Conceptual Design](#org936076d)
+    5.  [Entity-Relationship Diagram](#orgb8b1b86)
+    6.  [Normalization](#org69fc208)
+    7.  [Database Schema](#orgb4c3448)
+2.  [Dataset](#org3760ad4)
+3.  [Scripts for data insertion](#org9162951)
+4.  [Querying](#org90c71fe)
+    1.  [Get all mitigations for a certain technique](#org9b212f6)
+    2.  [All software ever used in a documented APT campaign](#org2501eec)
+    3.  [All mitigations associated with a certain tactic](#orgbb2344d)
+    4.  [\* Get all mitigations for a specific technique](#org8381a8d)
+    5.  [Find all subtechniques for a technique](#org9e89318)
+    6.  [Get all tactics and their techniques](#orga7b3ea6)
+    7.  [Find all software used by a group](#orgf2528f7)
+    8.  [Get all campaigns involving a specific group](#orgd411ade)
+    9.  [Find all techniques/subtechniques in a specific campaign](#orgbef5d28)
+    10. [Get all associated groups for a specific group](#orgad61b44)
+    11. [Find all groups using techniques mitigated by specific mitigations](#orgb463b56)
+    12. [Get all campaigns that use software implementing techniques in a specific tactic](#orgfd45e1a)
+    13. [Find all tactics that indirectly involve a specific campaign through groups and techniques](#org689d234)
+    14. [Retrieve subtechniques and their parent techniques, but only if both are used in the same campaign](#org1a1eccb)
+    15. [Find all mitigations that impact software used in campaigns involving specific groups](#orgd809cd7)
+    16. [And so on.](#org471664e)
+5.  [Report generation](#orgba3036a)
+    1.  [Use Case 1: Identify mitigations for high-risk campaigns](#org5015fa8)
+        1.  [Query 1: Get all mitigations for techniques used in a specific campaign](#orgd387d75)
+        2.  [Query 2: Find mitigations affecting subtechniques in a specific campaign](#orgdfd1be9)
+    2.  [Use Case 2: Map group tactics and software connections](#orgc7302bb)
+        1.  [Query 1: Find all tactics associated with techniques used by a group](#org1becf26)
+        2.  [Query 2: Get all software used by a group and linked to a tactic](#org867c08c)
+    3.  [Use Case 3: Explore campaign relationships with associated groups](#org916d463)
+        1.  [Query 1: Find all groups involved in campaigns using specific techniques](#org0663b2f)
+        2.  [Query 2: Retrieve associated groups for campaigns targeting a specific group](#org6bae97e)
+6.  [Performance Tuning](#orgb52ae82)
+7.  [Project Documentation](#org9d53aa8)
+    1.  [Requires: jupyter, pandas, openpyxl (for the notebook.ipynb)](#orgdcb8f4a)
+    2.  [Database is hosted in a neo4j Aura account](#orge853c42)
+        1.  [You can make an account and then contact me to invite you into my neo4j organization.](#org567eb29)
+    3.  [You can import my data model and import the nodes and relationships.](#org4bea66f)
 
 
 
-<a id="orgfe3f08b"></a>
+<a id="orgf61b686"></a>
 
 # Requirements Analysis and Conceptual Design
 
 
-<a id="orgabafbfa"></a>
+<a id="org4a6b0b3"></a>
 
 ## Cybersecurity Knowledge Base
 
 The MITRE ATT&CK Matrix is a structured framework that organizes Tactics, Techniques, and Subtechniques used by adversaries, including Advanced Persistent Threats (APTs), to exploit vulnerabilities like Common Vulnerabilities and Exposures (CVEs)
 
 
-<a id="org04a21b5"></a>
+<a id="org42b8fe3"></a>
 
 ## Purpose
 
@@ -71,7 +71,7 @@ This knowledge base aims to help cybersecurity professionals:
 -   get information about a specific malicious software
 
 
-<a id="orgc98036a"></a>
+<a id="orga0ad2e5"></a>
 
 ## Key Components
 
@@ -87,7 +87,7 @@ This knowledge base aims to help cybersecurity professionals:
 -   Campaigns - a specific period of cybersecurity attack; like 2015 Ukraine Hacks
 
 
-<a id="org5b8b1a9"></a>
+<a id="org936076d"></a>
 
 ## Conceptual Design
 
@@ -126,14 +126,14 @@ Basically, tactics have techniques. Techniques have subtechniques. Campaigns inv
 The data comes as an .xlsx from MITRE ATT&CK.
 
 
-<a id="org71abc94"></a>
+<a id="orgb8b1b86"></a>
 
 ## Entity-Relationship Diagram
 
-![img](/home/selffins/Pictures/Screenshots/erd.png)
+![img](./images/erd.png)
 
 
-<a id="orgca75be5"></a>
+<a id="org69fc208"></a>
 
 ## Normalization
 
@@ -142,7 +142,7 @@ The data comes as an .xlsx from MITRE ATT&CK.
 -   techniques.xlsx used to have an attribute &ldquo;is subtechnique&rdquo; and &ldquo;subtechnique of&rdquo; - we normalize by retrieving all subtechniques and placing them in their tables
 
 
-<a id="orgb4ebac9"></a>
+<a id="orgb4c3448"></a>
 
 ## Database Schema
 
@@ -424,10 +424,10 @@ Since I am using \`neo4j\`, the database language is \`Cypher\`. Here is how I c
 
 It creates this following \`data model\` for a graph database (properties are not shown &#x2013; refer to import code)
 
-![img](/home/selffins/Pictures/Screenshots/model.png)
+![img](./images/model.png)
 
 
-<a id="org0d8b187"></a>
+<a id="org3760ad4"></a>
 
 # Dataset
 
@@ -439,7 +439,7 @@ It creates this following \`data model\` for a graph database (properties are no
 -   You can also check the dataset in \`/clean\` and \`/xlsx\`
 
 
-<a id="orgffcae21"></a>
+<a id="org9162951"></a>
 
 # Scripts for data insertion
 
@@ -448,7 +448,7 @@ It creates this following \`data model\` for a graph database (properties are no
 -   Data processing was documented thoroughly in \`/data/notebook.ipynb\`
 
 
-<a id="orgdeba393"></a>
+<a id="org90c71fe"></a>
 
 # Querying
 
@@ -457,7 +457,7 @@ Here is an example of a Cypher query.
 Note in the website, you are able to select nodes, display as table, check properties of a node, check properties of a relationship (arrow), etc.
 
 
-<a id="orgec22f98"></a>
+<a id="org9b212f6"></a>
 
 ## Get all mitigations for a certain technique
 
@@ -465,24 +465,24 @@ Note in the website, you are able to select nodes, display as table, check prope
          WHERE t.ID = "T1110"
          RETURN p
 
--   ![img](/home/selffins/Pictures/Screenshots/query.png)
+-   ![img](./images/query.png)
 
 
-<a id="orgb512a9d"></a>
+<a id="org2501eec"></a>
 
 ## All software ever used in a documented APT campaign
 
-![img](/home/selffins/Pictures/Screenshots/campaigns.png)
+![img](./images/campaigns.png)
 
 
-<a id="orgbdff792"></a>
+<a id="orgbb2344d"></a>
 
 ## All mitigations associated with a certain tactic
 
-![img](/home/selffins/Pictures/Screenshots/initial.png)
+![img](./images/initial.png)
 
 
-<a id="org55bcc1f"></a>
+<a id="org8381a8d"></a>
 
 ## \* Get all mitigations for a specific technique
 
@@ -491,7 +491,7 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="org7176fa6"></a>
+<a id="org9e89318"></a>
 
 ## Find all subtechniques for a technique
 
@@ -500,7 +500,7 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="orgf027332"></a>
+<a id="orga7b3ea6"></a>
 
 ## Get all tactics and their techniques
 
@@ -508,7 +508,7 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="org4ffaf3a"></a>
+<a id="orgf2528f7"></a>
 
 ## Find all software used by a group
 
@@ -517,7 +517,7 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="org0a646ee"></a>
+<a id="orgd411ade"></a>
 
 ## Get all campaigns involving a specific group
 
@@ -526,7 +526,7 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="org0702304"></a>
+<a id="orgbef5d28"></a>
 
 ## Find all techniques/subtechniques in a specific campaign
 
@@ -541,7 +541,7 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="orgd9fdabb"></a>
+<a id="orgad61b44"></a>
 
 ## Get all associated groups for a specific group
 
@@ -550,7 +550,7 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="orgada280f"></a>
+<a id="orgb463b56"></a>
 
 ## Find all groups using techniques mitigated by specific mitigations
 
@@ -559,7 +559,7 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="org832b798"></a>
+<a id="orgfd45e1a"></a>
 
 ## Get all campaigns that use software implementing techniques in a specific tactic
 
@@ -568,7 +568,7 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="org6acf0fb"></a>
+<a id="org689d234"></a>
 
 ## Find all tactics that indirectly involve a specific campaign through groups and techniques
 
@@ -577,7 +577,7 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="org3550ce5"></a>
+<a id="org1a1eccb"></a>
 
 ## Retrieve subtechniques and their parent techniques, but only if both are used in the same campaign
 
@@ -586,7 +586,7 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="org09855b0"></a>
+<a id="orgd809cd7"></a>
 
 ## Find all mitigations that impact software used in campaigns involving specific groups
 
@@ -595,24 +595,24 @@ Note in the website, you are able to select nodes, display as table, check prope
     RETURN p
 
 
-<a id="org5a4b3ff"></a>
+<a id="org471664e"></a>
 
 ## And so on.
 
 
-<a id="orgbe6473b"></a>
+<a id="orgba3036a"></a>
 
 # Report generation
 
 The following are examples of reports for certain use-cases. The user can include relevant graphs from the \`neo4j Aura\` website.
 
 
-<a id="org75c5d66"></a>
+<a id="org5015fa8"></a>
 
 ## Use Case 1: Identify mitigations for high-risk campaigns
 
 
-<a id="org404c333"></a>
+<a id="orgd387d75"></a>
 
 ### Query 1: Get all mitigations for techniques used in a specific campaign
 
@@ -621,7 +621,7 @@ The following are examples of reports for certain use-cases. The user can includ
     RETURN p
 
 
-<a id="org844f8ee"></a>
+<a id="orgdfd1be9"></a>
 
 ### Query 2: Find mitigations affecting subtechniques in a specific campaign
 
@@ -630,12 +630,12 @@ The following are examples of reports for certain use-cases. The user can includ
     RETURN p
 
 
-<a id="orgd3b692b"></a>
+<a id="orgc7302bb"></a>
 
 ## Use Case 2: Map group tactics and software connections
 
 
-<a id="org0cdfbc3"></a>
+<a id="org1becf26"></a>
 
 ### Query 1: Find all tactics associated with techniques used by a group
 
@@ -644,7 +644,7 @@ The following are examples of reports for certain use-cases. The user can includ
     RETURN p
 
 
-<a id="org42cd717"></a>
+<a id="org867c08c"></a>
 
 ### Query 2: Get all software used by a group and linked to a tactic
 
@@ -653,12 +653,12 @@ The following are examples of reports for certain use-cases. The user can includ
     RETURN p
 
 
-<a id="org9c3fbd3"></a>
+<a id="org916d463"></a>
 
 ## Use Case 3: Explore campaign relationships with associated groups
 
 
-<a id="orgfef9153"></a>
+<a id="org0663b2f"></a>
 
 ### Query 1: Find all groups involved in campaigns using specific techniques
 
@@ -667,7 +667,7 @@ The following are examples of reports for certain use-cases. The user can includ
     RETURN p
 
 
-<a id="orgae73062"></a>
+<a id="org6bae97e"></a>
 
 ### Query 2: Retrieve associated groups for campaigns targeting a specific group
 
@@ -676,7 +676,7 @@ The following are examples of reports for certain use-cases. The user can includ
     RETURN p
 
 
-<a id="org3d3b9b6"></a>
+<a id="orgb52ae82"></a>
 
 # Performance Tuning
 
@@ -687,27 +687,27 @@ The following are examples of reports for certain use-cases. The user can includ
 -   Chosen schema minimized redundancy
 
 
-<a id="orge8a860c"></a>
+<a id="org9d53aa8"></a>
 
 # Project Documentation
 
 
-<a id="orgf0566e6"></a>
+<a id="orgdcb8f4a"></a>
 
 ## Requires: jupyter, pandas, openpyxl (for the notebook.ipynb)
 
 
-<a id="orgad4618d"></a>
+<a id="orge853c42"></a>
 
 ## Database is hosted in a neo4j Aura account
 
 
-<a id="org7327a6e"></a>
+<a id="org567eb29"></a>
 
 ### You can make an account and then contact me to invite you into my neo4j organization.
 
 
-<a id="org1d2aad2"></a>
+<a id="org4bea66f"></a>
 
 ## You can import my data model and import the nodes and relationships.
 
